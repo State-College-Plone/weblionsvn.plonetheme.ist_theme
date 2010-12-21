@@ -1,0 +1,12 @@
+<div id="portal-logo" i18n:domain="plone" 
+    tal:define="portal_title context/portal_title|view/portal_title;
+    navigation_root_url context/navigation_root_url|view/navigation_root_url">
+
+    <a href="http://www.psu.edu" id="logo-psu"  target="_blank">
+        <img
+            alt="Penn State University"
+            src="pms287-noBorder.png" /></a>
+
+    <a id="logo-site" tal:attributes="href navigation_root_url" tal:content="portal_title" />
+
+</div>

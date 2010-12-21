@@ -1,0 +1,81 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+/* -------- Global Nav ----------- */
+#portal-globalnav {
+  clear:both;
+  font-size:.8em;
+  height:1.4em;
+  padding:.5em 0;
+  border: 1px solid &dtml-globalNavBorder;;
+/*  ----  adds rounded corners when enabled -----
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+------ */
+  background: &dtml-globalNavMainTop;;
+  background-image: url(globalnavbg.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(&dtml-globalNavMainTop;), to(&dtml-globalNavMainBottom;));
+  background-image: -moz-linear-gradient(top,  &dtml-globalNavMainTop;,  &dtml-globalNavMainBottom;);
+  filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='&dtml-globalNavMainTop;', endColorstr='&dtml-globalNavMainBottom;'); /* IE6 & IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='&dtml-globalNavMainTop;', endColorstr='&dtml-globalNavMainBottom;')"; /* IE8 */
+}
+#portal-globalnav li { position:relative;
+ display:inline; }
+#portal-globalnav li a { 
+  display:inline;
+     position:relative; 
+  background: &dtml-globalNavMainTop;;
+  background-image: url(globalnavbg.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(&dtml-globalNavMainTop;), to(&dtml-globalNavMainBottom;));
+  background: -moz-linear-gradient(top,  &dtml-globalNavMainTop;,  &dtml-globalNavMainBottom;);
+  filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='&dtml-globalNavMainTop;', endColorstr='&dtml-globalNavMainBottom;'); /* IE6 & IE7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='&dtml-globalNavMainTop;', endColorstr='&dtml-globalNavMainBottom;')"; /* IE8 */
+  font-weight: bold;
+  text-align: center;
+  border-right:0.1em solid &dtml-globalNavBorder;;
+  color: &dtml-globalNavMainFont;;
+  text-shadow: &dtml-globalNavMainShadow; 1px 1px 1px;
+  padding:0.5em 1em 0.7em;
+}
+
+#portal-globalnav a:hover, #portal-globalnav .selected a:hover {
+    background: &dtml-globalNavHoverTop;;
+	background: -webkit-gradient(linear, left top, left bottom, from(&dtml-globalNavHoverTop;), to(&dtml-globalNavHoverBottom;));
+	background: -moz-linear-gradient(top,  &dtml-globalNavHoverTop;,  &dtml-globalNavHoverBottom;);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-globalNavHoverTop;', endColorstr='&dtml-globalNavHoverBottom;'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-globalNavHoverTop;', endColorstr='#&dtml-globalNavHoverBottom;'); /* ie8 */  
+    color: &dtml-globalNavHoverFont;;
+    text-shadow: #&dtml-globalNavHoverShadow; 1px 1px 1px;   
+}
+
+#portal-globalnav .selected a, #portal-globalnav a:focus {
+    background: #&dtml-globalNavActiveTop;;
+	background: -webkit-gradient(linear, left top, left bottom, from(&dtml-globalNavActiveTop;), to(&dtml-globalNavActiveBottom;));
+	background: -moz-linear-gradient(top,  &dtml-globalNavActiveTop;,  &dtml-globalNavActiveBottom;);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-globalNavActiveTop;', endColorstr='&dtml-globalNavActiveBottom;'); /* ie7 */
+	-ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-globalNavActiveTop;', endColorstr='&dtml-globalNavActiveBottom;'); /* ie8 */  
+    color: &dtml-globalNavActiveFont;;
+    text-shadow: &dtml-globalNavActiveShadow; 1px 1px 1px;
+}
+
+/* --------- enable for rounded corners 
+ul#portal-globalnav  {
+-webkit-border-top-left-radius: .5em;
+-webkit-border-bottom-left-radius: .5em;
+-moz-border-radius-topleft: .5em;
+-moz-border-radius-bottomleft: .5em;
+border-top-left-radius: .5em;
+border-bottom-left-radius: .5em;
+  
+-webkit-border-top-right-radius: .5em;
+-webkit-border-bottom-right-radius: .5em;
+-moz-border-radius-topright: .5em;
+-moz-border-radius-bottomright: .5em;
+border-top-right-radius: .5em;
+border-bottom-right-radius: .5em;
+
+padding-left: 2em;
+}
+-------------------*/
+/* </dtml-with> */
