@@ -4,8 +4,8 @@
     text-align: left;
     clear: none;
     font-size: 80%;
-    width:31.333%;
-    margin:2% 8.333% 1% 1%;
+    width:23.0%;
+    margin:2% 0% 1% 1%;
 }
 
 #portal-searchbox label, #portal-searchbox input {
@@ -25,7 +25,7 @@
 }
 #searchGadget,
 .LSBox input.searchField {
-    width:65%;
+    width:85%;
 }
 #searchGadget,
 .LSBox input.searchButton {

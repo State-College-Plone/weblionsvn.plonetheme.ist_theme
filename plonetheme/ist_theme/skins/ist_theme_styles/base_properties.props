@@ -50,13 +50,18 @@ portalMinWidth:string=70em
 columnOneWidth:string=16em
 columnTwoWidth:string=16em
 
+bodyBackgroundColor:string=#99B4DF
+backgroundStripOneColor:string=#99B4DF
+backgroundStripTwoColor:string=#5b3f23
+backgroundStripThreeColor:string=#482c34
+backgroundStripFourColor:string=#275297
 
 globalNavBorder:string=#B9BBBE
 
-globalNavMainTop:string=#003765
-globalNavMainBottom:string=#004b92
-globalNavMainShadow:string=#022e57
-globalNavMainFont:string=#FFFFFF
+globalNavMainTop:string=#D7D7D7
+globalNavMainBottom:string=#C2C2CA
+globalNavMainShadow:string=#CECECE
+globalNavMainFont:string=#383838
 
 globalNavHoverTop:string=#909090
 globalNavHoverBottom:string=#545454
@@ -68,6 +73,14 @@ globalNavActiveBottom:string=#CDCDD4
 globalNavActiveShadow:string=#CCCCCC
 globalNavActiveFont:string=#195A9A
 
-portletHeaderBack:string=#DDDDDD
-portletHeaderText:string=Black
+portletHeaderBack:string=#003765
+portletHeaderText:string=White
+portletHeaderTextHover:string=#CCCCCC
 portletBorder:string=none
+
+footer1Back:string=White
+footer1Font:string=Black
+footer1Link:string=#003765
+footer2Back:string=#003765
+footer2Font:string=White
+footer2Link:string=#CCCCCC
