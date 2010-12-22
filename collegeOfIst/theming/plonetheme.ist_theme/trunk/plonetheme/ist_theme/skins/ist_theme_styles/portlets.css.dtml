@@ -14,17 +14,6 @@ dl.portletError {
     background-color: #FFA500;
 }
 
-dt.portletHeader a, dt.portletHeader a:hover, dt.portletHeader a:visited {
-    background-color: transparent;
-    color: &dtml-portletHeaderText;;
-}
-
-dl.portlet dt,
-div.portletAssignments div.portletHeader {
-    padding: 0.42em 1em;
-    background: &dtml-portletHeaderBack;;
-    line-height: normal;
-}
 div.portletAssignments {
     font-size: 0.8em;
     line-height: 2em;
@@ -38,12 +27,27 @@ div.portletAssignments .managedPortletActions a {
     border: none;
 }
 
+dl.portlet dt,
+div.portletAssignments div.portletHeader {
+    padding: 0.42em 1em;
+    background: &dtml-portletHeaderBack;;
+    line-height: normal;
+}
+
+.portletHeader a, 
+.portletHeader a:visited, 
 dl.portlet dt a:link,
-dl.portlet dt a:visited,
-dl.portlet dt a:hover {
-    color: black;
+dl.portlet dt a:visited {
+    background-color: transparent;
+    color: &dtml-portletHeaderText;;
     display: block;
     border: none;
+}
+
+.portletHeader a:hover,
+.portletHeader a:visited:hover,
+dl.portlet dt a:hover {
+    color: &dtml-portletHeaderTextHover;;
 }
 
 dl.portlet dd.portletItem,
@@ -112,7 +116,7 @@ dl.portlet ul.navTree li a {
 
 dl.portlet ul.navTree li:hover a {
     color:white;
-    background:black;
+    background:#EEE;
 }
 
 dl.portletNavigationTree dd.portletItem {

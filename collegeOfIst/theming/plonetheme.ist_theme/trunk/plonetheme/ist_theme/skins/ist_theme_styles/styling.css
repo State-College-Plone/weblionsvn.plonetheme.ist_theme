@@ -5,10 +5,7 @@
 
 body {
     font: .9em Arial, FreeSans, sans-serif;
-   /*---- */ background: #99b4df;
- /*  background-image: url(background-image.gif);
-   background-repeat: repeat-x;  ---  turns on side border/background ---*/ 
-   color:Black;
+    color:Black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +40,7 @@ a:visited { color:purple; }
 /* ------ Container --------- */
 #visual-portal-wrapper {
     width: 94%;
+    float:left;
     background: White;
     margin-left: 3%;
     margin-right: 3%;
@@ -51,8 +49,22 @@ a:visited { color:purple; }
     box-shadow: 2px 2px 6px #333;
 }
 
-#portal-top { margin-bottom:1em; }
+#portal-top { 
+    margin-bottom:1em;
+    background: #003765;
+ /*   background-image: url(globalnavbg.png);*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#003765), to(#004b92));
+    background-image: -moz-linear-gradient(top,  #003765,  #004b92);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#003765', endColorstr='#004b92'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#003765', endColorstr='#004b92')"; /* IE8 */
+     }
 
+#portal-header { 
+     background-image: url(banner-background.png);
+     background-repeat: no-repeat;
+     background-position:left top;
+     height:5em;
+     }
 #portal-logo {
     display: inline-block;
     margin: 1%;
@@ -62,12 +74,12 @@ a:visited { color:purple; }
 
 #portal-logo a { float:left; }
 #portal-logo a, #portal-logo a:hover, #portal-logo a:visited {
-    color: Black;
+    color: White;
     background-color:transparent;
 }
-#portal-logo a#logo-psu { width:14.667%; padding:0 0 1%; }
-#portal-logo a#logo-psu img { width:100%; }
-#portal-logo a#logo-site { font-size: 1.2em; width:81.333%; padding:3.5% 2% 4%; }
+#portal-logo a#logo-psu { width:20.667%; padding:0 0 1%; }
+#portal-logo a#logo-psu img {  }
+#portal-logo a#logo-site { font-size: 1.2em; width:71.333%; padding:3.5% 2% 4%; }
 
 /* -------- Bread Crumbs --------- */
 #portal-breadcrumbs {
@@ -187,75 +199,15 @@ div.grid_width_is_7 .eventDetails { width:40.829%; margin-left:1.775%; }
 div.grid_width_is_10 .eventDetails { width:38.524%; margin-left:1.23%; }
 div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 
-/* ------------  FOOTER -------------- */
-#portal-footer {
-    font-size: 75%;
-    background: #ddd;
-    padding: 0;
-    margin: 1em 0;
-    line-height: 2em;
-}
-
-#portal-footer p {
-    text-align:center;
-    margin:1em;
-}
-
-/*---- Colophon ---- */
-#portal-colophon {
-    font-size: 70%;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-#portal-colophon li {
-    padding:0 0.75em;
-    display:block;
-}
-
-#portal-colophon a {
-    color: #444;
-}
-#portal-colophon a:hover {
-    background-color:#444;
-    color:white;
-}
-
-/* ------ Site actions   ------- */
-
-#portal-siteactions {
-    font-size: 85%;
-    padding-bottom: 2em;
-    text-align: center;
-}
-#portal-siteactions li {
-    margin-right: 0.5em;
-}
-#portal-siteactions li a:hover {
-    color: #75ad0a
-}
-
-
-/*
-    Variable Grid System (Fluid Version).
-    Learn more ~ http://www.spry-soft.com/grids/
-    Based on 960 Grid System - http://960.gs/ & 960 Fluid - http://www.designinfluences.com/
-
-    Licensed under GPL and MIT.
-*/
-
-/*---------------------------------
---- modified from Plone SunBurst --
----------------------------------*/
 
 /* ----  Personal Tools ---*/
 div#portal-personaltools-wrapper {
-    display:none;
-    font-size:.7em;
+   /* display:none;*/
+    font-size:.8em;
     z-index: 50; /* personaltools should be above #portal-header (with z-index: 2) */
-    position: absolute;
-    right: 2% ;
-    top:0;
+    position: fixed;
+    left: 2% ;
+    bottom:0;
     width:6.33%;
 }
 dl#portal-personaltools {
@@ -263,12 +215,12 @@ dl#portal-personaltools {
     top: 0;
     padding: 0.25em 0.5em;
     font-size: 80%;
-    border-bottom-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    -webkit-border-bottom-right-radius: 0.5em;
-    -webkit-border-bottom-left-radius: 0.5em;
-    -moz-border-radius-bottomleft: 0.5em;
-    -moz-border-radius-bottomright: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
 }
 #portal-personaltools #anon-personalbar a {
     float: left;
@@ -289,11 +241,26 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 }
 #portal-personaltools dd {
     right: 0;
-    padding-top: 0.5em;
+    margin-top: -1.5em;
+    margin-left:5em;
+}
+#portal-personaltools dd li {
+    display:inline;
+    float:left;
+    clear:none;
 }
 #portal-personaltools dd {
     background: #e3e3e3;
     padding-bottom: 0.5em;
+}
+#portal-personaltools dd ul {
+    background: #e3e3e3;
+    float:left;
+}
+#portal-personaltools dd li {
+    display:inline;
+    float:left;
+    clear:none;
 }
 #portal-personaltools dd a {
     line-height: 2em;
