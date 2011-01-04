@@ -6,7 +6,7 @@ from zope.component import getMultiAdapter
 from Acquisition import aq_inner
 from Products.Five import BrowserView
 
-from plonetheme.themeplate.browser.interfaces import IColumnControl
+from plonetheme.ist_theme.browser.interfaces import IColumnControl
 
 _marker = []
 
