@@ -8,6 +8,11 @@ dl.portlet {
     font-size: 80%;
     width:100%;
     border:&dtml-portletBorder;;
+    /* --------- Drop Shadow ---- */
+    -moz-box-shadow: #333 2px 2px 6px; 
+    -webkit-box-shadow: #333 2px 2px 6px;
+    box-shadow: 2px 2px 6px #333;
+    /* ------------------------------ */
 }
 
 dl.portletError {
@@ -32,6 +37,12 @@ div.portletAssignments div.portletHeader {
     padding: 0.42em 1em;
     background: &dtml-portletHeaderBack;;
     line-height: normal;
+    
+/* --------- Drop Shadow ---- 
+    -moz-box-shadow: #333 2px 2px 6px; 
+    -webkit-box-shadow: #333 2px 2px 6px;
+    box-shadow: 2px 2px 6px #333;
+------------------------------ */
 }
 
 .portletHeader a, 
