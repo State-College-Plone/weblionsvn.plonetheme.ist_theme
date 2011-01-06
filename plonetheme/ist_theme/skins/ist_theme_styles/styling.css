@@ -57,29 +57,42 @@ a:visited { color:purple; }
     background-image: -moz-linear-gradient(top,  #003765,  #004b92);
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#003765', endColorstr='#004b92'); /* IE6 & IE7 */
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#003765', endColorstr='#004b92')"; /* IE8 */
-     }
+}
 
 #portal-header { 
      background-image: url(banner-background.png);
      background-repeat: no-repeat;
      background-position:left top;
-     height:5em;
-     }
+     height: 7em;
+}
+
 #portal-logo {
-    display: inline-block;
-    margin: 1%;
-    width:50%;
-    padding:0;
+	 display: inline-block;
+	 margin: 1%;
+	 padding: 0;
+	 width: 65%;
 }
 
 #portal-logo a { float:left; }
+
 #portal-logo a, #portal-logo a:hover, #portal-logo a:visited {
     color: White;
     background-color:transparent;
 }
-#portal-logo a#logo-psu { width:20.667%; padding:0 0 1%; }
+
+#portal-logo a#logo-psu { 
+    width: 35%; 
+	padding: 0 0 1%; 
+}
+
 #portal-logo a#logo-psu img {  }
-#portal-logo a#logo-site { font-size: 1.2em; width:71.333%; padding:3.5% 2% 4%; }
+
+
+#portal-logo a#logo-site {
+    font-size: 1.3em;
+    padding: 4.5% 0 0;
+    width: 65%;
+}
 
 /* -------- Bread Crumbs --------- */
 #portal-breadcrumbs {

@@ -1,11 +1,11 @@
 /* ---------  Plone search box ------------- */
 #portal-searchbox {
-    float: right;
-    text-align: left;
-    clear: none;
-    font-size: 80%;
-    width:23.0%;
-    margin:2% 0% 1% 1%;
+   clear: none;
+   float: right;
+   font-size: 80%;
+   margin: 3% 1% 1% 1%;
+   text-align: left;
+   width: 18%;
 }
 
 #portal-searchbox label, #portal-searchbox input {
