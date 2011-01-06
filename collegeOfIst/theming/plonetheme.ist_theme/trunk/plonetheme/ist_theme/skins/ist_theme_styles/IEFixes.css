@@ -6,3 +6,5 @@
     https://dev.plone.org/plone/ticket/10417
 */
 
+* html  img, div, a, input { behavior: url(&dtml-portal_url;/iepngfix.htc); }
+
