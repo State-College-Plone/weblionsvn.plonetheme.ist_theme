@@ -46,7 +46,8 @@
       layer=".interfaces.IThemeSpecific"
       template="templates/footer.pt"
       permission="zope2.View"
-      />
+      /> 
+        
   <!-- Customized colophon  -->
   <browser:viewlet
     name="plone.colophon"

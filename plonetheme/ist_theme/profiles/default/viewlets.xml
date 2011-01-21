@@ -6,6 +6,10 @@
         <viewlet name="plone.global_sections" insert-after="plone.header" />
     </order>
     
+    <order manager="plone.portalfooter" skinname="Weblion IST Theme">
+        <viewlet name="plone.site_actions" insert-before="plone.colophon" />
+    </order>
+    
     <hidden manager="plone.portalheader" skinname="Weblion IST Theme">
         <viewlet name="plone.global_sections" />
     </hidden>
