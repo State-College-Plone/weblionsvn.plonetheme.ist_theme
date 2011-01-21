@@ -148,6 +148,10 @@ a:visited { color:purple; }
 
 /*-------------- Content Area ------------*/
 
+.documentDescription {
+    display: none;
+}
+
 #content img.tileImage,
 #content div.newsImageContainer {
     float: right;

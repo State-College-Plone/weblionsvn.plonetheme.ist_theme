@@ -71,7 +71,7 @@ globalNavHoverFont:string=#FFFFFF
 globalNavActiveTop:string=#ABA9B2
 globalNavActiveBottom:string=#CDCDD4
 globalNavActiveShadow:string=#CCCCCC
-globalNavActiveFont:string=#195A9A
+globalNavActiveFont:string=#4f2800
 
 portletHeaderBack:string=#003765
 portletHeaderText:string=White
