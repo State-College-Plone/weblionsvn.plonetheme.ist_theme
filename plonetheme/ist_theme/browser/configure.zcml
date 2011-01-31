@@ -38,6 +38,16 @@
         permission="zope2.View"
         />
         
+    <!-- Path Bar (Breadcrumbs)  -->
+    <browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        template="templates/path_bar.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+        
     <!-- Customized footer  -->
     <browser:viewlet
       name="plone.footer"
