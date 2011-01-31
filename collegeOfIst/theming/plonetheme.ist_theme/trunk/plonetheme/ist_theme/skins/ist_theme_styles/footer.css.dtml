@@ -6,7 +6,7 @@
     font-size: 75%;
     background-color:&dtml-footer2Back;;
     padding: 0;
-    margin: 0;
+    margin: .5em 0 0 0;
     line-height: 2em;
     color:&dtml-footer2Font;;
 }
