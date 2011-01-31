@@ -106,9 +106,13 @@ a.managePortletsFallback {
 
 /* Navigation Portlet */
 dl.portletNavigationTree { border:none; }
+
 dl.portletNavigationTree .portletItem { padding:0; }
+
 ul.navTree { border-top: 0.1em solid #ddd; color:black; }
+
 ul.navTree a, ul.navTree a:visited { color:black; }
+
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
     line-height: 2em;
 }
@@ -126,7 +130,7 @@ dl.portlet ul.navTree li a {
 }
 
 dl.portlet ul.navTree li:hover a {
-    color:white;
+    color: #282323;
     background:#EEE;
 }
 
