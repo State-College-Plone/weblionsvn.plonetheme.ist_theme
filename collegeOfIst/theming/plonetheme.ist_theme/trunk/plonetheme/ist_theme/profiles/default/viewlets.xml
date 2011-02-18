@@ -7,7 +7,9 @@
     </order>
     
     <order manager="plone.portalfooter" skinname="Weblion IST Theme">
-        <viewlet name="plone.site_actions" insert-before="plone.colophon" />
+        <viewlet name="plone.footer" insert-before="plone.site_actions" />
+        <viewlet name="plone.site_actions" insert-after="plone.footer" />
+        <viewlet name="plone.colophon" insert-after="plone.site_actions" />
     </order>
     
     <hidden manager="plone.portalheader" skinname="Weblion IST Theme">

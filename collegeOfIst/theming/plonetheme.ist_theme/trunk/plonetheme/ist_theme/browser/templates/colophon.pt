@@ -6,18 +6,21 @@
   <div class="colophonWrapper">
     <ul>
      <li>
+         Built in partnership with 
       <a href="http://weblion.psu.edu"
           class="colophonIcon colophonIconWebLion"
-          title="This Plone site was built in partnership with the WebLion Project at Pennsylvania State University. Click for more information."
-         >Built in partnership with the WebLion Project at Penn State University.
-       </a></li>
-       
+          title="This Plone site was built in partnership with the WebLion Project at Penn State. Follow this link for more information.">
+          WebLion at Penn State.
+     </a>
+     </li> 
      <li>
-       <a href="http://plone.org"
+         Powered by 
+     <a href="http://plone.org"
           title="This site was built using the Plone Open Source CMS/WCM."
           i18n:attributes="title title_built_with_plone;"
           i18n:translate="label_powered_by_plone">
-          Powered by Plone &amp; Python</a>
+          Plone and Python.
+     </a>
      </li>
     </ul>
   </div>

@@ -289,6 +289,12 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 }
 /* @end */
 
+/***** site sections *****/
+
+.section-front-page h1, #portal-breadcrumbs {
+	display: none;
+}
+
 
 
 /* Clear Floated Elements
