@@ -295,6 +295,30 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 	display: none;
 }
 
+/***** for when you want a bi-column page *****/
+
+#content-column-01 {
+    float: left;
+    clear: left;
+    width: 48%;
+}
+
+#content-column-02 {
+    float: right;
+    clear: right;
+    width: 48%;
+}
+
+/***** for when you want tile items to take up half the page *****/
+
+.columnTileItem {
+    clear: right;
+    float: right;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    width: 48%;
+}
+
 
 
 /* Clear Floated Elements
