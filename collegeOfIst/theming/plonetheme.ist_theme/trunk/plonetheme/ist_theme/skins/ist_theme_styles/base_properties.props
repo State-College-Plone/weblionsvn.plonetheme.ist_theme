@@ -69,9 +69,9 @@ globalNavHoverShadow:string=#242424
 globalNavHoverFont:string=#FFFFFF
 
 globalNavActiveTop:string=#ABA9B2
-globalNavActiveBottom:string=#CDCDD4
-globalNavActiveShadow:string=#CCCCCC
-globalNavActiveFont:string=#4f2800
+globalNavActiveBottom:string=#545454
+globalNavActiveShadow:string=#545454
+globalNavActiveFont:string=#ffffff
 
 portletHeaderBack:string=#003765
 portletHeaderText:string=White

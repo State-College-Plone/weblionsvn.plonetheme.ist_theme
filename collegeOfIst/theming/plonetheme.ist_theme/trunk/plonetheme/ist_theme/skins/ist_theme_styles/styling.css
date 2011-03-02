@@ -11,13 +11,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
-    color: Black;
     line-height: 1.5em;
 }
+
 h1, h2 {
     letter-spacing: -0.05em;
 }
-h1 { font-size: 1.4em; }
+
+h1 { 
+	font-size: 1.4em;
+	color: #003765; 
+}
+
+#content h1.documentFirstHeading {
+	color: #003765;
+}
+
 h2 { font-size: 1.25em; }
 h3 { font-size: 1.15em; }
 h4 {
@@ -39,11 +48,11 @@ a:visited { color:purple; }
 
 /* ------ Container --------- */
 #visual-portal-wrapper {
-    width: 94%;
+    width: 85%;
     float:left;
     background: White;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
     -moz-box-shadow: #333 2px 2px 6px; 
     -webkit-box-shadow: #333 2px 2px 6px;
     box-shadow: 2px 2px 6px #333;
@@ -70,7 +79,7 @@ a:visited { color:purple; }
 	 display: inline-block;
 	 margin: 1%;
 	 padding: 0;
-	 width: 65%;
+	 width: 75%;
 }
 
 #portal-logo a { float:left; }
@@ -86,11 +95,18 @@ a:visited { color:purple; }
 }
 
 #portal-logo a#logo-psu img {  }
-
+   
+#portal-logo a#logo-college {
+	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+    padding: 1.5% 0 0;
+    width: 65%;
+}
 
 #portal-logo a#logo-site {
-    font-size: 1.3em;
-    padding: 4.5% 0 0;
+	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    padding: 1.5% 0 0;
     width: 65%;
 }
 
@@ -99,28 +115,31 @@ a:visited { color:purple; }
     height:1.75em;
     width:100%;
     font-size:.6em;
-/* Comment out to remove border */
-    border:1px solid #dedede;
+/* Comment out to remove border 
+    border:1px solid #dedede; */
     
 /*  Comment out to remove background color */
    /* background-color:#CCC;*/
 }
+
 #portal-breadcrumbs span {
-    float:left;
-    line-height:1.75em;
-    color:#777;
-    padding-left:.5em;
-}
+    float: left;
+    line-height: 1.75em;
+    color: #777;
+    padding-left: .5em;
+} 
+
 #portal-breadcrumbs span.breadcrumbSeparator {
-    display:none;
+    display: none;
 }
+
 #portal-breadcrumbs span a {
-    display:block;
-    padding:0 .65em 0 0;
+    display: block;
+    padding: 0 .65em 0 0;
 /* Comment out to remove apple arrow graphic after link */
 /* If using background color for breadcrumbs, this image will need to be updated
    or commented out */
-    background: transparent url(crumbs.gif) no-repeat right center;
+   background: transparent url(crumbs.gif) no-repeat right center;
 }
 #portal-breadcrumbs span a:link,
 #portal-breadcrumbs span a:visited {
@@ -131,7 +150,7 @@ a:visited { color:purple; }
 #portal-breadcrumbs a:link, #portal-breadcrumbs a:visited,	
 #portal-breadcrumbs span a:hover,
 #portal-breadcrumbs span a:focus {
-    color:#dd2c0d;
+    color: #003765;
 }
 /* @end */
 
@@ -291,7 +310,7 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 
 /***** site sections *****/
 
-.section-front-page h1, #portal-breadcrumbs {
+.section-front-page h1, .section-front-page #portal-breadcrumbs {
 	display: none;
 }
 
@@ -300,13 +319,13 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 #content-column-01 {
     float: left;
     clear: left;
-    width: 48%;
+    width: 46%;
 }
 
 #content-column-02 {
     float: right;
     clear: right;
-    width: 48%;
+    width: 46%;
 }
 
 /***** for when you want tile items to take up half the page *****/
@@ -316,10 +335,8 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
     float: right;
     margin-top: 0.5em;
     padding-top: 0.5em;
-    width: 48%;
+    width: 46%;
 }
-
-
 
 /* Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/

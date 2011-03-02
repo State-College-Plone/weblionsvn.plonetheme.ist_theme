@@ -4,9 +4,9 @@
 /* -------- Global Nav ----------- */
 #portal-globalnav {
   clear:both;
-  font-size:.8em;
-  height:1.4em;
-  padding:.5em 0;
+  font-size: .7em;
+  height: 1.4em;
+  padding: .5em 0;
   border: 1px solid &dtml-globalNavBorder;;
 /*  ----  adds rounded corners when enabled -----
   -webkit-border-radius: 8px;
