@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plone">
 
     <!-- 'Weblion IST Theme' Zope 3 browser layer -->
@@ -18,6 +19,8 @@
         permission="zope.Public"
         allowed_interface=".interfaces.IColumnControl"
         />                
+        
+    <!-- viewlets -->
     
     <!-- Global nav  -->
     <browser:viewlet
@@ -75,5 +78,16 @@
       class=".viewlets.SearchBoxViewlet"
       permission="zope2.View"
       />
+      
+      <!-- portlets -->
+      
+      <include package="plone.app.portlets" />
+      
+     <!-- custom news portlet -->
+     <plone:portletRenderer
+      portlet="plone.app.portlets.portlets.news.INewsPortlet"
+      template="templates/ist_news.pt"
+      layer=".interfaces.IThemeSpecific"
+      />  
 
 </configure>
