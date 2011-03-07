@@ -265,17 +265,13 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     display: block;
 } 
 
-.portletNews .portletItemDescription { 
+.portletItemDescription { 
 	font-size: 85%;
 	padding-top: .5em;
     line-height: 1.5em;
     margin-left: 1em;
     display: block;
 }
-
-/* .portletNews .portletItemDetails {
-	display: none;
-} */
 
 /*************** content well portlets ***************/
 
@@ -293,10 +289,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     width: 30%;
 }
 
-.section-front-page .portletsBelowContentA, .section-front-page .portletsBelowContentB {
+/*.section-front-page .portletsBelowContentA, .section-front-page .portletsBelowContentB {
 	height: 400px;
 	border-right: 1px solid #999;
-}
+} */
 
 
 /* </dtml-with> */
