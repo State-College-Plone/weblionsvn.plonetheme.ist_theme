@@ -273,6 +273,34 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     display: block;
 }
 
+.portletWrapper {
+    width:100%;
+}
+
+/*************** bling portlet ***************/
+
+
+ul.slideshow li img {
+	width: 100%;
+}
+.slideshow-caption {
+    height: 68px !important;
+}
+
+.slideshow-caption .slideshow-caption-container {
+    padding: 0 5px 10px 5px !important;
+}
+
+.slideshow-caption p {
+    margin: 0 !important;
+}
+
+a.read-more {
+	display: block !important;
+    margin: 0 0 10px 0 !important;
+}
+
+
 /*************** content well portlets ***************/
 
 /* #footer-portlets {
@@ -281,6 +309,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #portlets-below {
     width: 100%;
+}
+
+.section-front-page .portletsAboveContentA, .section-front-page ul.slideshow {
+	height: 300px;
 }
 
 .portletsBelowContentA, .portletsBelowContentB, .portletsBelowContentC {

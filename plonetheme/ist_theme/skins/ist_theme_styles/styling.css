@@ -314,6 +314,21 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 	display: none;
 }
 
+/***** fsd *****/
+
+.facultyStaffDirectory .atozView .alphabetLinks ol li {
+    display: inline;
+    font-size: 140%;
+}
+
+.facultyStaffDirectory .listing {
+    border: medium none;
+    font-size: 1em;
+    margin: 1em 0 1.5em;
+    width: 100%;
+}
+
+
 /***** for when you want a bi-column page *****/
 
 #content-column-01 {
