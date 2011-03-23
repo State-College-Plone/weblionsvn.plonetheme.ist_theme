@@ -3,10 +3,13 @@
 
 /* Portlets */
 
+.portletWrapper {
+    width:100%;
+}
+
 dl.portlet {
     margin: 0;
-    font-size: 90%;
-    width:100%;
+    width: 100%;
 }
 
 dl.portletError {
@@ -103,7 +106,8 @@ a.managePortletsFallback {
 
 /***** Navigation Portlet *****/
 dl.portletNavigationTree { 
-	border:none; 
+	border:none;
+	margin: .7em 0 0 0; 
 }
 
 dl.portletNavigationTree .portletItem { 
@@ -273,10 +277,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     display: block;
 }
 
-.portletWrapper {
-    width:100%;
-}
-
 /*************** bling portlet ***************/
 
 
@@ -284,7 +284,7 @@ ul.slideshow li img {
 	width: 100%;
 }
 .slideshow-caption {
-    height: 68px !important;
+    height: 80px !important;
 }
 
 .slideshow-caption .slideshow-caption-container {
