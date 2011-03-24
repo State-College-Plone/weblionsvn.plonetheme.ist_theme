@@ -1,12 +1,72 @@
-/* <dtml-with base_properties> (do not remove this :) */
-/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+/* <dtml-with base_properties> */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
 
-/* DELETE THIS LINE AND PUT YOUR CSS STUFF HERE */
+/* begin css rules */
 
+/****************** body ******************/
 body {
-    font: .9em Arial, FreeSans, sans-serif;
-    color:Black;
+    background-color: #e5e5e5;
+    font-family: .9em Arial, FreeSans, sans-serif;
+    color: Black;
 }
+/****************** / body ******************/
+/****************** wrapper ******************/
+#visual-portal-wrapper {
+	background-color: #e5e5e5;
+    width: 75%;
+    float:left;
+    margin-left: 12%;
+    margin-right: 10%;
+    -moz-box-shadow: #333 2px 2px 6px; 
+    -webkit-box-shadow: #333 2px 2px 6px;
+    box-shadow: 2px 2px 6px #333;
+}
+/****************** / wrapper ******************/
+/****************** portal top ******************/
+#portal-top { 
+	background-color: #e5e5e5;
+	margin-bottom: 1em;
+}
+
+#portal-header { 
+     height: 7em;
+}
+
+#portal-logo {
+	 display: inline-block;
+	 margin: 1%;
+	 padding: 0;
+	 width: 75%;
+}
+
+#portal-logo a { float:left; }
+
+#portal-logo a, #portal-logo a:hover, #portal-logo a:visited {
+    color: White;
+    background-color:transparent;
+}
+
+#portal-logo a#logo-psu { 
+    width: 35%; 
+	padding: 0 0 1%; 
+}
+
+#portal-logo a#logo-psu img {  }
+   
+#portal-logo a#logo-college {
+	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+    padding: 1.5% 0 0;
+    width: 65%;
+}
+
+#portal-logo a#logo-site {
+	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    padding: 1.5% 0 0;
+    width: 65%;
+}
+/****************** / portal top ******************/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
@@ -46,69 +106,7 @@ a { color:#0645AD; text-decoration:underline; }
 a:hover, a:visited:hover { color:white; background-color:#0645AD; }
 a:visited { color:purple; }
 
-/* ------ Container --------- */
-#visual-portal-wrapper {
-    width: 85%;
-    float:left;
-    background: #ffffff;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    -moz-box-shadow: #333 2px 2px 6px; 
-    -webkit-box-shadow: #333 2px 2px 6px;
-    box-shadow: 2px 2px 6px #333;
-}
 
-#portal-top { 
-    margin-bottom:1em;
-    background: #003765;
- /*   background-image: url(globalnavbg.png);*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#003765), to(#004b92));
-    background-image: -moz-linear-gradient(top,  #003765,  #004b92);
-    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#003765', endColorstr='#004b92'); /* IE6 & IE7 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#003765', endColorstr='#004b92')"; /* IE8 */
-}
-
-#portal-header { 
-     background-image: url(banner-background.png);
-     background-repeat: no-repeat;
-     background-position:left top;
-     height: 7em;
-}
-
-#portal-logo {
-	 display: inline-block;
-	 margin: 1%;
-	 padding: 0;
-	 width: 75%;
-}
-
-#portal-logo a { float:left; }
-
-#portal-logo a, #portal-logo a:hover, #portal-logo a:visited {
-    color: White;
-    background-color:transparent;
-}
-
-#portal-logo a#logo-psu { 
-    width: 35%; 
-	padding: 0 0 1%; 
-}
-
-#portal-logo a#logo-psu img {  }
-   
-#portal-logo a#logo-college {
-	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-	font-size: 1em;
-    padding: 1.5% 0 0;
-    width: 65%;
-}
-
-#portal-logo a#logo-site {
-	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    padding: 1.5% 0 0;
-    width: 65%;
-}
 
 /* -------- Bread Crumbs --------- */
 #portal-breadcrumbs {
@@ -387,5 +385,8 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 .clearfix {
     display: block;
 }
+
+/* end css rules */
+
 
 /* </dtml-with> */

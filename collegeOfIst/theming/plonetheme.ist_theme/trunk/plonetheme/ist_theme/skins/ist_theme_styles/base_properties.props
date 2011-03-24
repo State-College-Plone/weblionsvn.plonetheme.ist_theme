@@ -50,7 +50,7 @@ portalMinWidth:string=70em
 columnOneWidth:string=16em
 columnTwoWidth:string=16em
 
-bodyBackgroundColor:string=#99B4DF
+bodyBackgroundColor:string=#e5e5e5
 backgroundStripOneColor:string=#99B4DF
 backgroundStripTwoColor:string=#5b3f23
 backgroundStripThreeColor:string=#482c34

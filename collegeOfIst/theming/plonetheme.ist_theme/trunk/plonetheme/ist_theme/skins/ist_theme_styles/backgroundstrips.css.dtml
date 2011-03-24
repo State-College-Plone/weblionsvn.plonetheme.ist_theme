@@ -1,9 +1,7 @@
 /* <dtml-with base_properties> (do not remove this :) */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
 
-body {
-    background-color: &dtml-bodyBackgroundColor;;
-}
+
 div#background-strip-one,
 div#background-strip-two,
 div#background-strip-three,
