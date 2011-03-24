@@ -113,8 +113,8 @@ q {
 }
 
 input.searchField {
-/*  -webkit-appearance: searchfield;*/
-    -moz-appearance: searchfield;
+/*  -webkit-appearance: searchfield; */
+    -moz-appearance: searchfield; 
 }
 
 /* Collapsible elements in search_form */
