@@ -9,12 +9,12 @@
         <input class="searchfield" type="text" value="Type to Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Type to Search...';}" />
          <input type="button" value="Go" alt="Submit Form" class="searchbutton" /></div> 
         <ul id="search">
-            <li><label for="thisSite"><input id="thisSite" value="thisSite" checked type="radio" name="choice" /><span>Search This Site</span></label></li>  
-            <li><label for="PSUweb"><input value="PSUweb" id="PSUweb" type="radio" name="choice" /><span>Search Penn State Web</span></label></li> 
-            <li><label for="PSUpeople"><input value="PSUpeople" id="PSUpeople" type="radio" name="choice" /><span>Search Penn State People</span></label></li> 
-            <li><label for="PSUemail"><input value="PSUemail" id="PSUemail" type="radio" name="choice" /><span>Search Penn State Email Names</span></label></li> 
-            <li><label for="PSUdept"><input value="PSUdept" id="PSUdept" type="radio" name="choice"/><span>Search Penn State Departments</span></label></li>
-            <li><label for="google"><input value="google" id="google" type="radio" name="choice" /><span>Search Google</span></label></li>            
+            <li><label for="thisSite"><input id="thisSite" value="thisSite" checked type="radio" name="choice" /><span>This Site</span></label></li>  
+            <li><label for="PSUweb"><input value="PSUweb" id="PSUweb" type="radio" name="choice" /><span>Penn State Web</span></label></li> 
+            <li><label for="PSUpeople"><input value="PSUpeople" id="PSUpeople" type="radio" name="choice" /><span>Penn State People</span></label></li> 
+            <li><label for="PSUemail"><input value="PSUemail" id="PSUemail" type="radio" name="choice" /><span>Penn State E-mail Names</span></label></li> 
+            <li><label for="PSUdept"><input value="PSUdept" id="PSUdept" type="radio" name="choice"/><span>Penn State Departments</span></label></li>
+            <li><label for="google"><input value="google" id="google" type="radio" name="choice" /><span>Google</span></label></li>            
         </ul> 
     </li> 
 </ul> 
