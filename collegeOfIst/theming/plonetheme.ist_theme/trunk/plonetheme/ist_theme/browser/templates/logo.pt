@@ -7,7 +7,6 @@
             alt="Penn State University"
             src="psu-logo.png" /></a>
        
-       <a id="logo-college" tal:attributes="href navigation_root_url" tal:content="string:College of" />
-       <a id="logo-site" tal:attributes="href navigation_root_url" tal:content="portal_title" />
+    <a id="logo-site" tal:attributes="href navigation_root_url" tal:content="portal_title" />
    
 </div>
