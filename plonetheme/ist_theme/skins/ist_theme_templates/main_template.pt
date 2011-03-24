@@ -55,11 +55,6 @@
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'" >
 
-<div id="background-strip-one"><!--- cosmetic background --></div>
-<div id="background-strip-two"><!--- cosmetic background --></div>
-<div id="background-strip-three"><!--- cosmetic background --></div>
-<div id="background-strip-four"><!--- cosmetic background --></div>
-
 <div id="visual-portal-wrapper">
 
         <div id="portal-top"

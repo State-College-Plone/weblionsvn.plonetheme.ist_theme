@@ -28,12 +28,6 @@ img { vertical-align: text-bottom; }
 
 /* @group Basics */
 
-body {
-    font: 100% Arial, FreeSans, sans-serif;
-    color: Black;
-    /* width: 58em; margin: 1em auto; */
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
