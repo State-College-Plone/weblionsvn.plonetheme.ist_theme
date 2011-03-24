@@ -42,7 +42,7 @@ body {
 #portal-logo a { float:left; }
 
 #portal-logo a, #portal-logo a:hover, #portal-logo a:visited {
-    color: White;
+    color: #000000;
     background-color:transparent;
 }
 
@@ -53,16 +53,16 @@ body {
 
 #portal-logo a#logo-psu img {  }
    
-#portal-logo a#logo-college {
+#portal-logo a {
 	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 90%;
     padding: 1.5% 0 0;
     width: 65%;
 }
 
 #portal-logo a#logo-site {
 	font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
+    font-size: 110%;
     padding: 1.5% 0 0;
     width: 65%;
 }
