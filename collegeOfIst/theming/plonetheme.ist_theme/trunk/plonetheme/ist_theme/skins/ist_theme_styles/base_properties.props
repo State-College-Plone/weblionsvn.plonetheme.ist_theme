@@ -56,12 +56,12 @@ backgroundStripTwoColor:string=#5b3f23
 backgroundStripThreeColor:string=#482c34
 backgroundStripFourColor:string=#275297
 
-globalNavBorder:string=#B9BBBE
+globalNavBorder:string=#474646
 
-globalNavMainTop:string=#D7D7D7
-globalNavMainBottom:string=#C2C2CA
+globalNavMainTop:string=#747474
+globalNavMainBottom:string=#474646
 globalNavMainShadow:string=#CECECE
-globalNavMainFont:string=#383838
+globalNavMainFont:string=#ffffff
 
 globalNavHoverTop:string=#909090
 globalNavHoverBottom:string=#545454
@@ -82,5 +82,5 @@ footer1Back:string=White
 footer1Font:string=Black
 footer1Link:string=#003765
 footer2Back:string=#003765
-footer2Font:string=White
+footer2Font:string=#000000
 footer2Link:string=#CCCCCC

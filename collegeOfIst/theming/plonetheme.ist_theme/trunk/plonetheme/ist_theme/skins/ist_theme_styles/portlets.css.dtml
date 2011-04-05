@@ -187,6 +187,78 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     display: inline;
 }
 
+
+
+.portletItemDetails { 
+	font-size: 85%;
+	padding-top: .5em;
+    line-height: 1.5em;
+    margin-left: 1em;
+    display: block;
+} 
+
+.portletItemDescription { 
+	font-size: 85%;
+	padding-top: .5em;
+    line-height: 1.5em;
+    margin-left: 1em;
+    display: block;
+}
+
+/*************** bling portlet ***************/
+
+
+ul.slideshow li img {
+	width: 100%;
+}
+
+.slideshow-caption {
+    height: 80px !important;
+    opacity: 0.8 !important;
+}
+
+.slideshow-caption .slideshow-caption-container {
+    padding: 0 5px 10px 5px !important;
+}
+
+.slideshow-caption p {
+    margin: 0 !important;
+}
+
+a.read-more {
+	display: block !important;
+    margin: 0 0 10px 0 !important;
+}
+
+
+/*************** content well portlets ***************/
+
+/* #footer-portlets {
+    background-color: &dtml-footer2Back;;
+} */
+
+#portlets-below {
+    width: 100%;
+}
+
+.section-front-page .portletsAboveContentA, .section-front-page ul.slideshow {
+	height: 400px;
+	z-index: 1;
+}
+
+.portletsBelowContentA, .portletsBelowContentB, .portletsBelowContentC, .portletsBelowContentD {
+    float: left;
+    margin: 0 1em 0 0;
+    width: 23%;
+}
+
+/*.section-front-page .portletsBelowContentA, .section-front-page .portletsBelowContentB {
+	height: 400px;
+	border-right: 1px solid #999;
+} */
+
+/*************** calendar ***************/
+
 .portletCalendar {
     width: 100%;
     margin: 1px 0 1em 0;
@@ -261,70 +333,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     border: 2px solid #205C90;
 }
 
-.portletItemDetails { 
-	font-size: 85%;
-	padding-top: .5em;
-    line-height: 1.5em;
-    margin-left: 1em;
-    display: block;
-} 
-
-.portletItemDescription { 
-	font-size: 85%;
-	padding-top: .5em;
-    line-height: 1.5em;
-    margin-left: 1em;
-    display: block;
-}
-
-/*************** bling portlet ***************/
-
-
-ul.slideshow li img {
-	width: 100%;
-}
-.slideshow-caption {
-    height: 80px !important;
-}
-
-.slideshow-caption .slideshow-caption-container {
-    padding: 0 5px 10px 5px !important;
-}
-
-.slideshow-caption p {
-    margin: 0 !important;
-}
-
-a.read-more {
-	display: block !important;
-    margin: 0 0 10px 0 !important;
-}
-
-
-/*************** content well portlets ***************/
-
-/* #footer-portlets {
-    background-color: &dtml-footer2Back;;
-} */
-
-#portlets-below {
-    width: 100%;
-}
-
-.section-front-page .portletsAboveContentA, .section-front-page ul.slideshow {
-	height: 300px;
-}
-
-.portletsBelowContentA, .portletsBelowContentB, .portletsBelowContentC {
-    float: left;
-    margin: 0 1em 0 0;
-    width: 30%;
-}
-
-/*.section-front-page .portletsBelowContentA, .section-front-page .portletsBelowContentB {
-	height: 400px;
-	border-right: 1px solid #999;
-} */
-
+/*************** / calendar ***************/
 
 /* </dtml-with> */
