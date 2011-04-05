@@ -4,7 +4,7 @@
 /* ------------  FOOTER -------------- */
 #portal-footer {
     font-size: 75%;
-    background-color:&dtml-footer2Back;;
+    /* background-color:&dtml-footer2Back;; */
     padding: 0;
     line-height: 2em;
     margin: .5em 0 0 0;
@@ -18,7 +18,7 @@
 
 #portal-footer a,
 #portal-footer a:visited {
-    background-color:&dtml-footer2Back;;
+    /* background-color:&dtml-footer2Back;; */
     color:&dtml-footer2Link;;
 }
 
@@ -29,7 +29,7 @@
 
 /*---- Colophon ---- */
 #portal-colophon {
-    background-color:&dtml-footer2Back;;
+    /* background-color:&dtml-footer2Back;; */
     color:&dtml-footer2Font;;
     font-size: 70%;
     text-align: center;
@@ -53,7 +53,7 @@
 /* ------ Site actions   ------- */
 
 #portal-siteactions {
-    background-color:&dtml-footer2Back;;
+    /* background-color:&dtml-footer2Back;; */
     color:&dtml-footer2Font;;
     font-size: 85%;
     padding-bottom: 2em;
