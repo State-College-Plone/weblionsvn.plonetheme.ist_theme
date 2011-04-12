@@ -86,42 +86,62 @@ body {
 }
 
 /****************** / portal top ******************/
-/****************** headings ******************/
 
+/****************** headings ******************/
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
     line-height: 1.5em;
 }
 
-h1, h2 {
-    letter-spacing: -0.05em;
-}
-
 h1 { 
-	font-size: 1.4em;
 	color: #003765; 
 }
 
-#content h1.documentFirstHeading {
-	color: #003765;
-}
-
-h2 { font-size: 1.25em; }
-h3 { font-size: 1.15em; }
-h4 {
-    font-size: 1.05em;
-}
-h5 {
-    font-size: 1em;
-}
-h6 {
-    font-size: 0.8em;
-}
 h2, h3, h4, h5, h6 {
     color: #444;
 }
 
+h1 { 
+	font-size: 120%;
+}
+
+h2 { 
+	font-size: 115%; 
+}
+
+h3 { 
+	font-size: 110%; 
+}
+
+h4 {
+    font-size: 105%;
+}
+
+h5 {
+    font-size: 100%;
+}
+
+h6 {
+    font-size: 90%;
+}
+
+h1, h2 {
+    letter-spacing: -0.05em;
+}
+
+h2 a, h3 a, h4 a {
+    border-bottom: none !important;
+}
+
+#content h1 {
+    margin-top: 0.5em;
+}
+
+#content h1.documentFirstHeading {
+    margin-top: 0;
+	color: #003765;
+}
 
 /****************** / headings ******************/
 
@@ -180,6 +200,13 @@ a:visited { color:purple; }
 /****************** / edit bar ******************/
 
 /****************** content ******************/
+
+#content {
+    line-height: 1.5em;
+    clear: both;
+    font-size: 80%;
+    margin: 0 0.25em .5em 0;
+}
 
 .documentDescription {
     display: none;
@@ -250,6 +277,15 @@ div.grid_width_is_10 .eventDetails { width:38.524%; margin-left:1.23%; }
 div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 
 /****************** / content ******************/
+
+/****************** video embeds ******************/
+.vid img,
+.vid object,
+.vid embed {
+    width : 100%;
+    max-width : 100%; 
+}
+/****************** / video embeds ******************/
 
 /* ----  Personal Tools ---*/
 div#portal-personaltools-wrapper {
