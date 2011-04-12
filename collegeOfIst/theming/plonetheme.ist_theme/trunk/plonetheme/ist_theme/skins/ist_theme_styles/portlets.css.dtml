@@ -1,12 +1,13 @@
 /* <dtml-with base_properties> (do not remove this :) */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
 
-/* Portlets */
-
+/********* portlet wrapper *********/
 .portletWrapper {
     width:100%;
 }
+/********* / portlet wrapper *********/
 
+/********* definition list: dl *********/
 dl.portlet {
     margin: 0;
     width: 100%;
@@ -15,7 +16,9 @@ dl.portlet {
 dl.portletError {
     background-color: #FFA500;
 }
+/********* / definition list: dl *********/
 
+/********* portlet assignments *********/
 div.portletAssignments {
     font-size: 0.8em;
     line-height: 2em;
@@ -43,7 +46,9 @@ div.portletAssignments div.portletHeader a {
 	font-size: 110%;
 	
 }
+/********* / portlet assignments *********/
 
+/********* portlet header *********/
 .portletHeader a, 
 .portletHeader a:visited, 
 dl.portlet dt a:link,
@@ -59,13 +64,17 @@ dl.portlet dt a:visited {
 dl.portlet dt a:hover {
     color: &dtml-portletHeaderTextHover;;
 }
+/********* / portlet header *********/
 
+/********* definition list: dl *********/
 dl.portlet dd.portletItem,
 dl.portlet dd.portletFooter,
 dl.portletError dd {
    padding: .5em .5em;
 }
+/********* / definition list: dl *********/
 
+/********* portlet links *********/
 div.managePortletsLink,
 a.managePortletsFallback {
     text-align: center;
@@ -89,27 +98,34 @@ a.managePortletsFallback {
     border: none;
     line-height: 2em;
 }
+/********* / portlet links *********/
 
+/********* definition list: dl *********/
 #visual-portal-wrapper dl.portletCalendar dd {
     padding: 0;
 }
+/********* / definition list: dl *********/
 
+/********* dashboard *********/
 #dashboard-portlets1,
 #dashboard-portlets2,
 #dashboard-portlets3,
 #dashboard-portlets4 {
     display: inline-block;
 }
+/********* / dashboard *********/
 
-/***** Navigation Portlet *****/
+/********* navigation portlet *********/
 .portletNavigationTree .portletHeader { 
-	padding: .2em;
+	font-weight: bold;
+	margin: 0 0 0 .2em;
+	padding: 0;
 }
 
 dl.portletNavigationTree { 
 	border:none;
 	margin: 0 0 0 0;
-	font-size: 90%; 
+	font-size: 80%; 
 }
 
 dl.portletNavigationTree .portletItem { 
@@ -139,11 +155,6 @@ dl.portlet ul.navTree li a {
     line-height: 1.2em;
 }
 
-/* dl.portlet ul.navTree li:hover a {
-    color: #282323;
-    background: #cccccc;
-} */
-
 ul.navTree a:hover { 
     color: #282323;
     background: #cccccc; 
@@ -165,10 +176,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     color: #003765;
 }
 
-/* @end */
+/********* / navigation portlet *********/
 
-
-
+/********* managed portlet *********/
 .managedPortlet {
     margin: 0.8em 0;
     color: #003765;
@@ -204,9 +214,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     margin-left: 1em;
     display: block;
 }
+/********* / managed portlet *********/
 
 /*************** bling portlet ***************/
-
 .section-front-page ul.slideshow li img {
 	width: 100%;
 }
@@ -233,8 +243,9 @@ a.read-more {
 	display: block !important;
     margin: 0 0 10px 0 !important;
 }
-/*************** content well portlets: front-page ***************/
+/*************** / bling portlet ***************/
 
+/*************** content well portlets: front-page ***************/
 #portlets-above {
     width: 99.5%;
     margin: 0;
@@ -299,7 +310,6 @@ a.read-more {
 /*************** / content well portlets: front-page ***************/
 
 /*************** content well portlets: second level ***************/
-
 .portletsAboveContentA portletWrapper, ul.slideshow, ul.slideshow img {
 	width: 100%;
 	min-height: 200px !important;
@@ -315,10 +325,50 @@ a.read-more {
 	display: none;
 }
 
+.portletsBelowContentA .portletWrapper, 
+.portletsBelowContentB .portletWrapper, 
+.portletsBelowContentC .portletWrapper {
+    background: url("bg.png") repeat-x scroll center top #ffffff;
+    border: 1px solid #cccccc;
+    display: block;
+    font-size: 80%;
+    min-height: 20em;
+    overflow: hidden;
+    float: left;
+    width: 31%;
+}
+
+.portletsBelowContentA .portletWrapper, 
+.portletsBelowContentB .portletWrapper {
+	    margin: 0 3% 0 0;
+}
+
+.portletsBelowContentC .portletWrapper {
+	    margin: 0;
+}
 /*************** / content well portlets: second level ***************/
 
-/*************** calendar ***************/
+/*************** classic portlet ***************/
 
+#classic-portlet {
+	font-size: 100%;
+}
+
+#classic-portlet h2 {
+	font-size: 90%;
+}
+
+#classic-portlet dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd {
+	margin: 0;
+	padding: 0;
+}
+#classic-portlet ul li {
+	font-size: 80%;
+}
+
+/*************** / classic portlet ***************/
+
+/*************** calendar ***************/
 .portletCalendar {
     width: 100%;
     margin: 1px 0 1em 0;
@@ -392,7 +442,6 @@ a.read-more {
 .ploneCalendar .todaynoevent {
     border: 2px solid #205C90;
 }
-
 /*************** / calendar ***************/
 
 /* </dtml-with> */
