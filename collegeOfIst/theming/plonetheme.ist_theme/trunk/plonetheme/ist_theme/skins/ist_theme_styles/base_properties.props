@@ -75,12 +75,12 @@ globalNavActiveFont:string=#ffffff
 
 portletHeaderBack:string=#003765
 portletHeaderText:string=White
-portletHeaderTextHover:string=#CCCCCC
+portletHeaderTextHover:string=#333333
 portletBorder:string=none
 
-footer1Back:string=White
 footer1Font:string=Black
-footer1Link:string=#003765
-footer2Back:string=#003765
+footer1Link:string=#000006
+footer2Back:string=#e5e5e5
 footer2Font:string=#000000
-footer2Link:string=#CCCCCC
+footer2Link:string=#000006
+footerLinkBackground:string=#333333

@@ -4,7 +4,7 @@
 /* -------- Global Nav ----------- */
 #portal-globalnav {
     clear: both;
-    font-size: .7em;
+    font-size: .8em;
     height: 1.4em;
     padding: .5em 0;
     /* border: 1px solid &dtml-globalNavBorder;; */
