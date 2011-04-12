@@ -35,7 +35,7 @@ div.portletAssignments .managedPortletActions a {
 
 dl.portlet dt,
 div.portletAssignments div.portletHeader {
-	color: #003765;
+	color: #444;
 	font-size: 110%;
     padding: .5em 0 0 .5em;
     line-height: normal;
@@ -43,7 +43,7 @@ div.portletAssignments div.portletHeader {
 
 div.portletAssignments div.portletHeader a {
 	color: #003765;
-	font-size: 110%;
+	font-size: 80%;
 	
 }
 /********* / portlet assignments *********/
@@ -116,16 +116,28 @@ a.managePortletsFallback {
 /********* / dashboard *********/
 
 /********* navigation portlet *********/
-.portletNavigationTree .portletHeader { 
+.portletNavigationTree {
+	background: url("bg.png") repeat-x scroll center top #ffffff;
+	font-family: &dtml-portletFont;;
+	font-size: 80%;
+	padding: .5em;
+}
+
+.portletNavigationTree .portletHeader,
+.portletNavigationTree .portletHeader a,
+.portletNavigationTree .portletHeader a:hover,
+.portletNavigationTree .portletHeader a:visited
+ { 
+	color: #444;
 	font-weight: bold;
-	margin: 0 0 0 .2em;
+	margin: 0 0 0 .1em;
 	padding: 0;
 }
 
 dl.portletNavigationTree { 
 	border:none;
 	margin: 0 0 0 0;
-	font-size: 80%; 
+	font-size: 75%;
 }
 
 dl.portletNavigationTree .portletItem { 
@@ -245,11 +257,16 @@ a.read-more {
 }
 /*************** / bling portlet ***************/
 
-/*************** content well portlets: front-page ***************/
+/*************** content well portlets: everywhere ***************/
 #portlets-above {
     width: 99.5%;
     margin: 0;
     padding: 0;	
+}
+
+#portlets-below dl.portlet dt,
+div.portletAssignments div.portletHeader {
+	color: #000066;
 }
 
 #portlets-above dl.portlet dd.portletItem {
@@ -259,7 +276,9 @@ a.read-more {
 #portlets-above dd.portletFooter {
 	display: none;
 }
+/*************** / content well portlets: everywhere ***************/
 
+/*************** content well portlets: front-page ***************/
 .section-front-page .portletsAboveContentA,
 .section-front-page .portletsAboveContentA portletWrapper, 
 .section-front-page ul.slideshow {
@@ -348,21 +367,55 @@ a.read-more {
 }
 /*************** / content well portlets: second level ***************/
 
-/*************** classic portlet ***************/
+/*************** static portlet ***************/
+#portal-column-one .portletStaticText {
+	font-size: 80%;
+}
+/*************** /static portlet ***************/
 
-#classic-portlet {
-	font-size: 100%;
+/*************** collection portlet ***************/
+#portal-column-one .portletCollection {
+	font-size: 80%;
 }
 
-#classic-portlet h2 {
+#portal-column-one .portletCollection .portletHeader,
+#portal-column-one .portletCollection .portletHeader a,
+#portal-column-one .portletCollection .portletHeader a:hover,
+#portal-column-one .portletCollection .portletHeader a:visited {
+	color: #444;
+}
+/*************** / collection portlet ***************/
+
+/*************** classic portlets ***************/
+
+#classic-portlet-contacts {
+	border: 1px solid #cccccc;
+	font-family: &dtml-portletFont;;
 	font-size: 90%;
+	margin: .5em 0 0 0;
+	padding: .5em;
 }
 
-#classic-portlet dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd {
+#classic-portlet-contacts h2 {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#classic-portlet-contacts .portletHeader {
+	display: none;
+}
+
+#classic-portlet-contacts dl.portlet dd.portletItem, dl.portletError dd {
 	margin: 0;
 	padding: 0;
 }
-#classic-portlet ul li {
+
+dl.portlet dd.portletFooter {
+	padding: 0 0 0 .5em;
+}
+
+#classic-portlet-contacts ul li {
 	font-size: 80%;
 }
 
