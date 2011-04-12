@@ -212,11 +212,17 @@ a:visited { color:purple; }
     display: none;
 }
 
+#liquid img {
+	width: 100%;
+	height: auto;
+}
+
 #content img.tileImage,
 #content div.newsImageContainer {
     float: right;
     margin: 0 1em 0.5em 1em;
 }
+
 #content div.newsImageContainer a {
     border-bottom: none;
 }
@@ -279,12 +285,18 @@ div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 /****************** / content ******************/
 
 /****************** video embeds ******************/
-.vid img,
 .vid object,
 .vid embed {
-    width : 100%;
-    max-width : 100%; 
+    width: 100%;
+    max-width: 100%;
 }
+
+.vid img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 /****************** / video embeds ******************/
 
 /* ----  Personal Tools ---*/

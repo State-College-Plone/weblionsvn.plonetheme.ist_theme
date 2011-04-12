@@ -73,6 +73,7 @@ globalNavActiveBottom:string=#545454
 globalNavActiveShadow:string=#545454
 globalNavActiveFont:string=#ffffff
 
+portletFont:string=Verdana, Arial, FreeSans, sans-serif
 portletHeaderBack:string=#003765
 portletHeaderText:string=White
 portletHeaderTextHover:string=#333333
