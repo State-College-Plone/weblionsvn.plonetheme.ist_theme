@@ -4,7 +4,7 @@
 /* ------------  FOOTER -------------- */
 #portal-footer {
     font-size: 75%;
-    /* background-color:&dtml-footer2Back;; */
+    background-color: &dtml-footer2Back;;
     padding: 0;
     line-height: 2em;
     margin: .5em 0 0 0;
@@ -18,19 +18,19 @@
 
 #portal-footer a,
 #portal-footer a:visited {
-    /* background-color:&dtml-footer2Back;; */
+    background-color:&dtml-footer2Back;;
     color:&dtml-footer2Link;;
 }
 
 #portal-footer a:hover {
-    background-color:&dtml-footer2Link;;
+    background-color: &dtml-footerLinkBackground;;
     color:&dtml-footer2Back;;
 }
 
 /*---- Colophon ---- */
 #portal-colophon {
-    /* background-color:&dtml-footer2Back;; */
-    color:&dtml-footer2Font;;
+    background-color:&dtml-footer2Back;;
+    color: &dtml-footer2Font;;
     font-size: 70%;
     text-align: center;
     padding: 1em 0 .5em;
@@ -46,14 +46,14 @@
     color:&dtml-footer2Link;;
 }
 #portal-colophon a:hover {
-    background-color:&dtml-footer2Link;;
+    background-color: &dtml-footerLinkBackground;;
     color:&dtml-footer2Back;;
 }
 
 /* ------ Site actions   ------- */
 
 #portal-siteactions {
-    /* background-color:&dtml-footer2Back;; */
+    background-color:&dtml-footer2Back;;
     color:&dtml-footer2Font;;
     font-size: 85%;
     padding-bottom: 2em;
@@ -69,7 +69,7 @@
     color:&dtml-footer2Link;;
 }
 #portal-siteactions li a:hover {
-    background-color:&dtml-footer2Link;;
+    background-color:&dtml-footerLinkBackground;;
     color:&dtml-footer2Back;;
 }
 

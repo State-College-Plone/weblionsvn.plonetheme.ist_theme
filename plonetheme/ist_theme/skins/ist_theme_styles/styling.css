@@ -13,6 +13,17 @@ body {
 
 /****************** wrapper ******************/
 #visual-portal-wrapper {
+	background-color: #ffffff;
+    width: 75%;
+    float:left;
+    margin-left: 12%;
+    margin-right: 10%;
+    -moz-box-shadow: #333 2px 2px 6px; 
+    -webkit-box-shadow: #333 2px 2px 6px;
+    box-shadow: 2px 2px 6px #333;
+}
+
+.section-front-page #visual-portal-wrapper {
 	background-color: #e5e5e5;
     width: 75%;
     float:left;
@@ -110,6 +121,8 @@ h6 {
 h2, h3, h4, h5, h6 {
     color: #444;
 }
+
+
 /****************** / headings ******************/
 
 a { color:#0645AD; text-decoration:underline; }

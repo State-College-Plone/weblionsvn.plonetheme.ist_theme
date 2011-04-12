@@ -198,7 +198,7 @@ dl dt span.summary a {
     line-height: 1.5em;
     clear: both;
     font-size: 80%;
-    margin: 1em 0.25em 2em 0.25em;
+    margin: 0 0.25em 2em 0;
 }
 
 /* Special case of #content - TinyMCE */
