@@ -17,7 +17,9 @@
 
 * :link,:visited { text-decoration:none }
 
-* ul,ol { list-style:none; }
+* ul,ol { 
+	/* list-style:none; */
+}
 
 * li { display: inline; }
 
@@ -37,8 +39,6 @@ img { vertical-align: text-bottom; }
 /* @end */
 
 /* @group Basics */
-
-
 
 p {
 }
@@ -219,7 +219,7 @@ body#content {
 }
 
 #content ul {
-    list-style-type: disc;
+    /* list-style-type: disc; */
     margin-left: 2em;
 }
 
@@ -234,8 +234,10 @@ dl.portlet li {
     line-height: 1.5em;
     display: list-item;
 }
-#content li {
+
+#content li, portletStaticText dl.portlet li {
     margin-bottom: 0.25em;
+    list-style-image: url(bullet.png);
 }
 
 #content dt {

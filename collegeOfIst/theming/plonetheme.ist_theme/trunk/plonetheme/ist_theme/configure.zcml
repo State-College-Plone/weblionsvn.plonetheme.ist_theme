@@ -6,6 +6,7 @@
     i18n_domain="plone">
 
   <include package=".browser" />
+  <include package=".portlets" />
 
   <cmf:registerDirectory name="ist_theme_images"/>
   <cmf:registerDirectory name="ist_theme_styles"/>

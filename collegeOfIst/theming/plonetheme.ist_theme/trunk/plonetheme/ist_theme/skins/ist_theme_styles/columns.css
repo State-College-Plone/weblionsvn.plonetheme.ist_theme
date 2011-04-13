@@ -7,6 +7,11 @@
  * Cell will be equivalent to 40px, left/right margin will be 10px.
  */
 
+div#portal-column-one {
+	background: url("bg-02.png") repeat-x scroll center top #fff;
+	padding: .5em;
+}
+
 div.row, div#portal-header, div#global_sections, div#portal-footer {
   float: left;
   width: 100%;

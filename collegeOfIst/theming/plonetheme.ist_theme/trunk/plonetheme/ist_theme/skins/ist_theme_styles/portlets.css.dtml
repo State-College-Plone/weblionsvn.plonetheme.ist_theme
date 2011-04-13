@@ -19,8 +19,14 @@ dl.portletError {
 /********* / definition list: dl *********/
 
 /********* portlet assignments *********/
+#portletmanager-plone-leftcolumn {
+	width: 100%
+	margin: 0;
+	padding: 0;
+}
+
 div.portletAssignments {
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 2em;
 }
 
@@ -65,6 +71,12 @@ dl.portlet dt a:hover {
     color: &dtml-portletHeaderTextHover;;
 }
 /********* / portlet header *********/
+
+/********* portlet footer *********/
+dl.portlet dd.portletFooter {
+	background-image: none;
+}
+/********* / portlet footer *********/
 
 /********* definition list: dl *********/
 dl.portlet dd.portletItem,
@@ -116,8 +128,13 @@ a.managePortletsFallback {
 /********* / dashboard *********/
 
 /********* navigation portlet *********/
+
+.portletWrapper .portletNavigationTree {
+	width: 100%;
+	margin: 0;
+}
+	
 .portletNavigationTree {
-	background: url("bg.png") repeat-x scroll center top #ffffff;
 	font-family: &dtml-portletFont;;
 	font-size: 80%;
 	padding: .5em;
@@ -126,8 +143,7 @@ a.managePortletsFallback {
 .portletNavigationTree .portletHeader,
 .portletNavigationTree .portletHeader a,
 .portletNavigationTree .portletHeader a:hover,
-.portletNavigationTree .portletHeader a:visited
- { 
+.portletNavigationTree .portletHeader a:visited { 
 	color: #444;
 	font-weight: bold;
 	margin: 0 0 0 .1em;
@@ -157,7 +173,12 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
 }
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
     padding: 0 ;
-    margin:0;
+}
+
+dl.portlet ul.navTree li {
+	list-style-image: url(arrow.png);
+	text-indent: -.4em;
+	margin: 0 0 0 1.3em;
 }
 
 dl.portlet ul.navTree li a {
@@ -192,12 +213,13 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 /********* managed portlet *********/
 .managedPortlet {
-    margin: 0.8em 0;
+	border: 1px dashed #ddd;
+    margin: 4em 0 0 0;
     color: #003765;
+    width: 100%;
 }
 
 .blockedPortlet .portletHeader {
-    border: 1px dashed #ddd;
     margin: -1px;
     background: none !important;
 }
@@ -367,9 +389,26 @@ div.portletAssignments div.portletHeader {
 }
 /*************** / content well portlets: second level ***************/
 
+/*************** simkins' contact portlet ***************/
+.portletContact {
+	border: 1px solid #cccccc;
+	font-family: &dtml-portletFont;;
+	font-size: 70%;
+	padding: 0 .5em 0 0;
+}
+
+.portletWrapper .portletContact {
+	margin: 1em 0 0 0;
+}
+/*************** simkins' contact portlet ***************/
+
 /*************** static portlet ***************/
 #portal-column-one .portletStaticText {
 	font-size: 80%;
+}
+
+.portletStaticText dl.portlet li {
+    list-style-image: url(bullet.png);
 }
 /*************** /static portlet ***************/
 
@@ -384,6 +423,15 @@ div.portletAssignments div.portletHeader {
 #portal-column-one .portletCollection .portletHeader a:visited {
 	color: #444;
 }
+
+.portletCollection dd {
+	background-image: url(arrow-02.png);
+	background-repeat: no-repeat;
+	background-position: 0 .8em;
+    text-indent: .2em;
+    margin: 0 0 0 1em;
+}
+
 /*************** / collection portlet ***************/
 
 /*************** classic portlets ***************/
@@ -411,15 +459,11 @@ div.portletAssignments div.portletHeader {
 	padding: 0;
 }
 
-dl.portlet dd.portletFooter {
-	padding: 0 0 0 .5em;
-}
-
 #classic-portlet-contacts ul li {
 	font-size: 80%;
 }
 
-/*************** / classic portlet ***************/
+/*************** / classic portlets ***************/
 
 /*************** calendar ***************/
 .portletCalendar {
