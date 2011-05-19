@@ -60,7 +60,8 @@ div.portletAssignments div.portletHeader a {
 dl.portlet dt a:link,
 dl.portlet dt a:visited {
     background-color: transparent;
-    color: #003765;
+    /* color: &dtml-portletHeaderLink;; */
+    color: #444444;
     display: block;
     border: none;
 }
@@ -68,7 +69,8 @@ dl.portlet dt a:visited {
 .portletHeader a:hover,
 .portletHeader a:visited:hover,
 dl.portlet dt a:hover {
-    color: &dtml-portletHeaderTextHover;;
+    /*color: &dtml-portletHeaderLinkHover;; */
+    color: #336699;
 }
 /********* / portlet header *********/
 
@@ -110,6 +112,15 @@ a.managePortletsFallback {
     border: none;
     line-height: 2em;
 }
+
+dd.portletItem a, dd.portletFooter a, dd.portletFooter a:visited {
+	color: #444444;
+}
+
+dd.portletItem a:hover, dd.portletFooter a:hover, dd.portletFooter a:hover {
+	color: #336699;
+}
+
 /********* / portlet links *********/
 
 /********* definition list: dl *********/
@@ -135,16 +146,31 @@ a.managePortletsFallback {
 }
 	
 .portletNavigationTree {
-	font-family: &dtml-portletFont;;
+	/*font-family: &dtml-portletFont;; */
 	font-size: 80%;
 	padding: .5em;
 }
 
 .portletNavigationTree .portletHeader,
 .portletNavigationTree .portletHeader a,
-.portletNavigationTree .portletHeader a:hover,
+.portletNavigationTree .portletHeader a:visited {
+	color: &dtml-portletLink;;
+	font-weight: bold;
+	margin: 0 0 0 .1em;
+	padding: 0;
+}
+
+.portletNavigationTree .portletHeader a:hover {
+	background: none; 
+	/*color: &dtml-portletLinkHover;; */
+	color: #336699;
+	font-weight: bold;
+	margin: 0 0 0 .1em;
+	padding: 0;
+}
+
 .portletNavigationTree .portletHeader a:visited { 
-	color: #444;
+	color: &dtml-portletLinkVisited;;
 	font-weight: bold;
 	margin: 0 0 0 .1em;
 	padding: 0;
@@ -161,12 +187,12 @@ dl.portletNavigationTree .portletItem {
 }
 
 ul.navTree { 
-    color: #333333; 
+    color: &dtml-portletLink;; 
 }
 
-ul.navTree a, ul.navTree a:visited { 
-    color: #333333; 
-}
+/*ul.navTree a, ul.navTree a:visited { 
+    color: #ffffff; 
+} */
 
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
     line-height: 2em;
@@ -183,14 +209,19 @@ dl.portlet ul.navTree li {
 
 dl.portlet ul.navTree li a {
     border: none;
+    /* color: &dtml-portletLink;; */
+    color: #444444 !important;
     padding: 2%;
     display: block;
     line-height: 1.2em;
 }
 
-ul.navTree a:hover { 
-    color: #282323;
-    background: #cccccc; 
+dl.portlet ul.navTree li:hover a, dl.portlet ul.navTree li a:hover {
+color: #336699;
+}
+
+dl.portlet ul.navTree a.state-published:hover {
+color:#336699 !important;
 }
 
 dl.portletNavigationTree dd.portletItem {
@@ -206,16 +237,17 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 dl.portlet ul.navTree .navTreeCurrentItem {
     font-weight: bold;
     font-size: 105%;
-    color: #003765;
+    color: &dtml-portletLink;;
 }
+
 
 /********* / navigation portlet *********/
 
 /********* managed portlet *********/
 .managedPortlet {
-	border: 1px dashed #ddd;
+	border: 1px dashed &dtml-managedportletBorder;;
     margin: 4em 0 0 0;
-    color: #003765;
+    color: &dtml-managedportletLink;;
     width: 100%;
 }
 
@@ -225,7 +257,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 .blockedPortlet .portletHeader a {
-    color: #666;
+    color: &dtml-portletLink;;
 }
 
 .blockedPortlet .portletBlockedMessage {
@@ -288,7 +320,7 @@ a.read-more {
 
 #portlets-below dl.portlet dt,
 div.portletAssignments div.portletHeader {
-	color: #000066;
+	color: &dtml-portletHeaderText;;
 }
 
 #portlets-above dl.portlet dd.portletItem {
@@ -342,7 +374,7 @@ div.portletAssignments div.portletHeader {
 .section-front-page .portletsBelowContentC .portletWrapper, 
 .section-front-page .portletsBelowContentD .portletWrapper, 
 .section-front-page .portletsBelowContentE .portletWrapper {
-	    margin: 0 1.6% 0 0;
+	    margin: 0 1.8% 0 0;
 }
 
 .portletsBelowContentF .portletWrapper {
@@ -387,6 +419,7 @@ div.portletAssignments div.portletHeader {
 .portletsBelowContentC .portletWrapper {
 	    margin: 0;
 }
+
 /*************** / content well portlets: second level ***************/
 
 /*************** simkins' contact portlet ***************/
@@ -419,9 +452,12 @@ div.portletAssignments div.portletHeader {
 
 #portal-column-one .portletCollection .portletHeader,
 #portal-column-one .portletCollection .portletHeader a,
-#portal-column-one .portletCollection .portletHeader a:hover,
 #portal-column-one .portletCollection .portletHeader a:visited {
-	color: #444;
+	color: #444444;
+}
+
+#portal-column-one .portletCollection .portletHeader a:hover {
+	color: #336699;
 }
 
 .portletCollection dd {

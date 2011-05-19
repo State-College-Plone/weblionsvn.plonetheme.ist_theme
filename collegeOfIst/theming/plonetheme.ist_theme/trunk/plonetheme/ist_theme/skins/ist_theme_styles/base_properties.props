@@ -5,19 +5,16 @@ plone_skin:string=Weblion IST Theme
 logoName:string=logo.png
 
 fontFamily:string="Helvetica Neue", Arial, FreeSans, sans-serif; 
-linkColor:string=#0645AD
+
 editBarColor:string=#75ad0a
 
 compatibilityClassic:string=The below values are copied directly from the old Plone theme to make sure that products that rely on them don't break. 
 
 fontBaseSize:string=69%
-fontColor:string=Black
+fontColor:string=#444444
 fontSmallSize:string=90%
 
-backgroundColor:string=White
-
-linkActiveColor:string=Red
-linkVisitedColor:string=Purple
+backgroundColor:string=#ffffff
 
 borderWidth:string=1px
 borderStyle:string=solid
@@ -33,7 +30,13 @@ contentViewBorderColor:string=#74ae0b
 contentViewBackgroundColor:string=#cde2a7
 contentViewFontColor:string=#578308
 
-inputFontColor:string=Black
+linkColor:string=#444444
+
+contentLinkActiveColor:string=#444444
+contentLinkHoverColor:string=#444444
+contentLinkVisitedColor:string=#444444
+
+inputFontColor:string=#000000
 
 textTransform:string=none
 
@@ -73,11 +76,23 @@ globalNavActiveBottom:string=#545454
 globalNavActiveShadow:string=#545454
 globalNavActiveFont:string=#ffffff
 
-portletFont:string=Verdana, Arial, FreeSans, sans-serif
-portletHeaderBack:string=#003765
-portletHeaderText:string=White
-portletHeaderTextHover:string=#333333
 portletBorder:string=none
+
+portletFont:string=Verdana, Arial, FreeSans, sans-serif
+
+portletHeaderBack:string=#003765
+portletHeaderText:string=#444444
+portletHeaderLink:string=#444444
+portletHeaderLinkHover:string=#336699
+
+portletLink:string=#444444
+portletLinkHover:string=#444444
+portletLinkVisited:string=#444444
+
+portletLinkBackground:string=#cccccc
+
+managedportletBorder:string=#dddddd
+managedportletLink:string=#003765
 
 footer1Font:string=Black
 footer1Link:string=#000006
