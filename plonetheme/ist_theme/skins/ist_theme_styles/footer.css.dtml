@@ -23,8 +23,8 @@
 }
 
 #portal-footer a:hover {
-    background-color: &dtml-footerLinkBackground;;
-    color:&dtml-footer2Back;;
+    background-color: none;
+    color: #336699;
 }
 
 /*---- Colophon ---- */
@@ -46,8 +46,8 @@
     color:&dtml-footer2Link;;
 }
 #portal-colophon a:hover {
-    background-color: &dtml-footerLinkBackground;;
-    color:&dtml-footer2Back;;
+    background-color: none;
+    color: #336699;
 }
 
 /* ------ Site actions   ------- */
@@ -69,8 +69,8 @@
     color:&dtml-footer2Link;;
 }
 #portal-siteactions li a:hover {
-    background-color:&dtml-footerLinkBackground;;
-    color:&dtml-footer2Back;;
+    background-color: none;
+    color: #336699;
 }
 
 /* </dtml-with> */

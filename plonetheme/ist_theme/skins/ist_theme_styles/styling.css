@@ -95,15 +95,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { 
-	color: #003765; 
+	color: &dtml-fontColor;; 
 }
 
 h2, h3, h4, h5, h6 {
-    color: #444;
+    color: &dtml-fontColor;;
 }
 
 h1 { 
-	font-size: 120%;
+	font-size: 130%;
 }
 
 h2 { 
@@ -140,14 +140,25 @@ h2 a, h3 a, h4 a {
 
 #content h1.documentFirstHeading {
     margin-top: 0;
-	color: #003765;
+	color: &dtml-fontColor;;
 }
 
 /****************** / headings ******************/
 
-a { color:#0645AD; text-decoration:underline; }
-a:hover, a:visited:hover { color:white; background-color:#0645AD; }
-a:visited { color:purple; }
+/****************** links ******************/
+a { 
+	color: &dtml-linkColor;; 
+	text-decoration: underline; 
+}
+a:hover, a:visited:hover { 
+	color: &dtml-contentLinkHoverColor;; 
+	background-color: none; 
+}
+
+a:visited { 
+	color: &dtml-contentLinkVisitedColor;;  
+}
+/****************** / links ******************/
 
 /****************** breadcrumbs ******************/
 #portal-breadcrumbs {
