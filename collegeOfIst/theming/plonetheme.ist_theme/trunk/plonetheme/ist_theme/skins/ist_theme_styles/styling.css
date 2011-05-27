@@ -103,7 +103,7 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 { 
-	font-size: 130%;
+	font-size: 160%;
 }
 
 h2 { 
@@ -141,6 +141,10 @@ h2 a, h3 a, h4 a {
 #content h1.documentFirstHeading {
     margin-top: 0;
 	color: &dtml-fontColor;;
+}
+/***** style for h3 in customized fsd person_view.pt *****/
+.fsd-custom {
+	margin: 1em 0 0 0;
 }
 
 /****************** / headings ******************/
@@ -315,10 +319,10 @@ div#portal-personaltools-wrapper {
    /* display:none;*/
     font-size:.8em;
     z-index: 50; /* personaltools should be above #portal-header (with z-index: 2) */
-    position: fixed;
-    left: 2% ;
-    bottom:0;
-    width:6.33%;
+    /* position: fixed; */
+    float: right;
+    bottom: 0;
+    width: 6.33%;
 }
 dl#portal-personaltools {
     background: #e3e3e3;
