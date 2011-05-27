@@ -238,6 +238,12 @@ a:visited {
     margin: 0 1em 0.5em 1em;
 }
 
+#content img.tileImage {
+    float: left;
+    margin: 0 1em 0.5em 1em;
+    width: auto;
+}
+
 #content div.newsImageContainer a {
     border-bottom: none;
 }
