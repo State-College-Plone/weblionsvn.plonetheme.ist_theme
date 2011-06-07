@@ -412,6 +412,17 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
     width: 100%;
 }
 
+/* tighten up spacing on job titles */
+.personView div.caption ul {
+	margin: 0 0 1em 0 !important;
+}
+
+.personView div.caption ul li {
+	margin: 0 0 .5em 0 !important;
+	line-height: .75em !important;
+	list-style: none !important;
+}
+
 
 /***** for when you want a bi-column page *****/
 
