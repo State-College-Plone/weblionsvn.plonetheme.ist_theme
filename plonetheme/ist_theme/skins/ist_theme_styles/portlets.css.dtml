@@ -14,7 +14,7 @@ dl.portlet {
 }
 
 dl.portletError {
-    background-color: #FFA500;
+    background-color: &dtml-notifyBorderColor;;
 }
 /********* / definition list: dl *********/
 
@@ -36,19 +36,19 @@ div.portletAssignments .managedPortletActions {
 div.portletAssignments .managedPortletActions a {
     margin: 0 0.25em;
     border: none;
-    color: #003765;
+    color: &dtml-portletHeaderBack;;
 }
 
 dl.portlet dt,
 div.portletAssignments div.portletHeader {
-	color: #444;
+	color: &dtml-linkColor;;
 	font-size: 110%;
     padding: .5em 0 0 .5em;
     line-height: normal;
 }
 
 div.portletAssignments div.portletHeader a {
-	color: #003765;
+	color: &dtml-portletHeaderBack;;
 	font-size: 80%;
 	
 }
@@ -61,7 +61,7 @@ dl.portlet dt a:link,
 dl.portlet dt a:visited {
     background-color: transparent;
     /* color: &dtml-portletHeaderLink;; */
-    color: #444444;
+    color: &dtml-linkColor;;
     display: block;
     border: none;
 }
@@ -70,7 +70,7 @@ dl.portlet dt a:visited {
 .portletHeader a:visited:hover,
 dl.portlet dt a:hover {
     /*color: &dtml-portletHeaderLinkHover;; */
-    color: #336699;
+    color: &dtml-contentLinkHoverColor;;
 }
 /********* / portlet header *********/
 
@@ -95,7 +95,7 @@ a.managePortletsFallback {
     padding: 0.25em 0.5em;
     font-size: 80%;
     margin: 0 auto 1em;
-    background: #ddd;
+    background: &dtml-managedportletBorder;;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
@@ -114,11 +114,11 @@ a.managePortletsFallback {
 }
 
 dd.portletItem a, dd.portletFooter a, dd.portletFooter a:visited {
-	color: #444444;
+	color: &dtml-linkColor;;
 }
 
 dd.portletItem a:hover, dd.portletFooter a:hover, dd.portletFooter a:hover {
-	color: #336699;
+	color: &dtml-contentLinkHoverColor;;
 }
 
 /********* / portlet links *********/
@@ -210,18 +210,18 @@ dl.portlet ul.navTree li {
 dl.portlet ul.navTree li a {
     border: none;
     /* color: &dtml-portletLink;; */
-    color: #444444;
+    color: &dtml-linkColor;;
     padding: 2%;
     display: block;
     line-height: 1.2em;
 }
 
 /* dl.portlet ul.navTree li:hover a, dl.portlet ul.navTree li a:hover {
-color: #336699;
+color: &dtml-contentLinkHoverColor;;
 } */
 
 dl.portlet ul.navTree li a:hover {
-	color: #336699;
+	color: &dtml-contentLinkHoverColor;;
 }
 
 dl.portlet ul.navTree a.state-published:hover {
@@ -245,7 +245,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem a:hover {
-	color: #336699;
+	color: &dtml-contentLinkHoverColor;;
 }
 
 
@@ -367,8 +367,8 @@ div.portletAssignments div.portletHeader {
 .section-front-page .portletsBelowContentD .portletWrapper, 
 .section-front-page .portletsBelowContentE .portletWrapper, 
 .section-front-page .portletsBelowContentF .portletWrapper {
-    background: url("bg.png") repeat-x scroll center top #ffffff;
-    border: 1px solid #cccccc;
+    background: url("bg.png") repeat-x scroll center top &dtml-backgroundColor;;
+    border: 1px solid &dtml-portletLinkBackground;;
     display: block;
     font-size: 80%;
     min-height: 20em;
@@ -409,8 +409,8 @@ div.portletAssignments div.portletHeader {
 .portletsBelowContentA .portletWrapper, 
 .portletsBelowContentB .portletWrapper, 
 .portletsBelowContentC .portletWrapper {
-    background: url("bg.png") repeat-x scroll center top #ffffff;
-    border: 1px solid #cccccc;
+    background: url("bg.png") repeat-x scroll center top &dtml-backgroundColor;;
+    border: 1px solid &dtml-portletLinkBackground;;
     display: block;
     font-size: 80%;
     min-height: 20em;
@@ -432,7 +432,7 @@ div.portletAssignments div.portletHeader {
 
 /*************** simkins' contact portlet ***************/
 .portletContact {
-	border: 1px solid #cccccc;
+	border: 1px solid &dtml-portletLinkBackground;;
 	font-family: &dtml-portletFont;;
 	font-size: 70%;
 	padding: 0 .5em 0 0;
@@ -461,11 +461,11 @@ div.portletAssignments div.portletHeader {
 #portal-column-one .portletCollection .portletHeader,
 #portal-column-one .portletCollection .portletHeader a,
 #portal-column-one .portletCollection .portletHeader a:visited {
-	color: #444444;
+	color: &dtml-linkColor;;
 }
 
 #portal-column-one .portletCollection .portletHeader a:hover {
-	color: #336699;
+	color: &dtml-contentLinkHoverColor;;
 }
 
 .portletCollection dd {
@@ -481,7 +481,7 @@ div.portletAssignments div.portletHeader {
 /*************** classic portlets ***************/
 
 #classic-portlet-contacts {
-	border: 1px solid #cccccc;
+	border: 1px solid &dtml-portletLinkBackground;;
 	font-family: &dtml-portletFont;;
 	font-size: 90%;
 	margin: .5em 0 0 0;
@@ -516,7 +516,7 @@ div.portletAssignments div.portletHeader {
 }
 
 .portletCalendar dt {
-    background-color: #eee;
+    background-color: &dtml-calendarBackground;;
     font-weight: bold;
     text-align: center;
     line-height: 1.6em;
@@ -563,25 +563,25 @@ div.portletAssignments div.portletHeader {
 }
 
 .ploneCalendar .weekdays th {
-    background-color: #eee;
+    background-color: &dtml-calendarBackground;;
     text-align: center;
     padding: 2px;
     font-weight: normal;
 }
 
 .ploneCalendar .event {
-    background-color: #eee;
+    background-color: &dtml-calendarBackground;;
     font-weight: bold;
 }
 
 .ploneCalendar .todayevent {
-    background-color: #eee;
-    border: 2px solid #205C90;
+    background-color: &dtml-calendarBackground;;
+    border: 2px solid &dtml-contentLinkActiveColor;;
     font-weight: bold;
 }
 
 .ploneCalendar .todaynoevent {
-    border: 2px solid #205C90;
+    border: 2px solid &dtml-contentLinkActiveColor;;
 }
 /*************** / calendar ***************/
 

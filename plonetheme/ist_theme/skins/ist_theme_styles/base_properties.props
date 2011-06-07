@@ -10,8 +10,10 @@ editBarColor:string=#75ad0a
 
 compatibilityClassic:string=The below values are copied directly from the old Plone theme to make sure that products that rely on them don't break. 
 
+bodyBackgroundColor:string=#e5e5e5
+
 fontBaseSize:string=69%
-fontColor:string=#444444
+fontColor:string=#292828
 fontSmallSize:string=90%
 
 backgroundColor:string=#ffffff
@@ -32,9 +34,9 @@ contentViewFontColor:string=#578308
 
 linkColor:string=#444444
 
-contentLinkActiveColor:string=#444444
-contentLinkHoverColor:string=#444444
-contentLinkVisitedColor:string=#444444
+contentLinkActiveColor:string=#0d3c6b
+contentLinkHoverColor:string=#336699
+contentLinkVisitedColor:string=#750976
 
 inputFontColor:string=#000000
 
@@ -93,6 +95,8 @@ portletLinkBackground:string=#cccccc
 
 managedportletBorder:string=#dddddd
 managedportletLink:string=#003765
+
+calendarBackground:string=#eeeeee
 
 footer1Font:string=Black
 footer1Link:string=#000006
