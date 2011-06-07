@@ -24,7 +24,7 @@
 
 #portal-footer a:hover {
     background-color: none;
-    color: #336699;
+    color: &dtml-contentLinkHoverColor;;
 }
 
 /*---- Colophon ---- */
@@ -47,7 +47,7 @@
 }
 #portal-colophon a:hover {
     background-color: none;
-    color: #336699;
+    color: &dtml-contentLinkHoverColor;;
 }
 
 /* ------ Site actions   ------- */
@@ -70,7 +70,7 @@
 }
 #portal-siteactions li a:hover {
     background-color: none;
-    color: #336699;
+    color: &dtml-contentLinkHoverColor;;
 }
 
 /* </dtml-with> */
