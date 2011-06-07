@@ -1,6 +1,7 @@
 <tal:comment replace="nothing">
-Customized by rtp2.
-Added fields from Products.ISTExtender
+    customized by rtp2.
+       added fields from Products.ISTExtender
+       changed job titles from being wrapped in p tags to unordered list.
 </tal:comment>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -48,11 +49,13 @@ Added fields from Products.ISTExtender
             <span class="family-name" tal:content="context/getLastName"><tal:comment replace="nothing">[Last Name]</tal:comment></span>
             <span class="honorific-suffix" tal:content="context/getSuffix"><tal:comment replace="nothing">[ suffix i.e. Dr]</tal:comment></span>
           </h1>
-          <p tal:condition="python: showExpired and context.getJobTitles()"
+          <ul>
+          <li tal:condition="python: showExpired and context.getJobTitles()"
              class="title"
              tal:repeat="jobTitle context/getJobTitles"
              tal:content="jobTitle"><tal:comment replace="nothing">[job title]</tal:comment>
-          </p>
+          </li>
+          </ul>
           <p tal:condition="python:not showExpired"
              i18n:translate="FacultyStaffDirectory_expired_notice">
             This person is no longer associated with the organization.

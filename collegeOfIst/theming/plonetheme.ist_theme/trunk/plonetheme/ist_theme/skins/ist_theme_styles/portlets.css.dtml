@@ -163,7 +163,7 @@ dd.portletItem a:hover, dd.portletFooter a:hover, dd.portletFooter a:hover {
 .portletNavigationTree .portletHeader a:hover {
 	background: none; 
 	/*color: &dtml-portletLinkHover;; */
-	color: #336699;
+	color: #336699 !important;
 	font-weight: bold;
 	margin: 0 0 0 .1em;
 	padding: 0;
@@ -210,18 +210,22 @@ dl.portlet ul.navTree li {
 dl.portlet ul.navTree li a {
     border: none;
     /* color: &dtml-portletLink;; */
-    color: #444444 !important;
+    color: #444444;
     padding: 2%;
     display: block;
     line-height: 1.2em;
 }
 
-dl.portlet ul.navTree li:hover a, dl.portlet ul.navTree li a:hover {
+/* dl.portlet ul.navTree li:hover a, dl.portlet ul.navTree li a:hover {
 color: #336699;
+} */
+
+dl.portlet ul.navTree li a:hover {
+	color: #336699;
 }
 
 dl.portlet ul.navTree a.state-published:hover {
-color:#336699 !important;
+    color:#336699 !important;
 }
 
 dl.portletNavigationTree dd.portletItem {
@@ -238,6 +242,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     font-weight: bold;
     font-size: 105%;
     color: &dtml-portletLink;;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem a:hover {
+	color: #336699;
 }
 
 
