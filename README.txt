@@ -8,8 +8,8 @@ Installation
 
     [buildout]
     eggs =
-        (other eggs)
-        plonetheme.ist_theme
+        (other eggs)     
+        plonetheme.ist_theme          
 
     ...
     zcml =
