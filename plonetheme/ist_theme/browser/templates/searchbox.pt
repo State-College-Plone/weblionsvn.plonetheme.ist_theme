@@ -1,0 +1,22 @@
+<div id="portal-searchbox"
+     i18n:domain="plone"
+     tal:define="titlez string:${here/portal_url}/processPSUsearch;">
+
+<form method="get" action="" tal:attributes="action titlez" class="searchform">
+<ul id="menu-ist"> 
+    <li class="searchContainer-ist"> 
+        <div> 
+        <input class="searchfield-ist" type="text" value="Type to Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Type to Search...';}" />
+         <input type="button" value="Go" alt="Submit Form" class="searchbutton-ist" /></div> 
+        <ul id="search">
+            <li><label for="thisSite"><input id="thisSite" value="thisSite" checked type="radio" name="choice" /><span>This Site</span></label></li>  
+            <li><label for="PSUweb"><input value="PSUweb" id="PSUweb" type="radio" name="choice" /><span>Penn State Web</span></label></li> 
+            <li><label for="PSUpeople"><input value="PSUpeople" id="PSUpeople" type="radio" name="choice" /><span>Penn State People</span></label></li> 
+            <li><label for="PSUemail"><input value="PSUemail" id="PSUemail" type="radio" name="choice" /><span>Penn State Directory</span></label></li> 
+            <li><label for="PSUdept"><input value="PSUdept" id="PSUdept" type="radio" name="choice"/><span>Penn State Departments</span></label></li>
+            <li><label for="google"><input value="google" id="google" type="radio" name="choice" /><span>Google</span></label></li>            
+        </ul> 
+    </li> 
+</ul> 
+</form>
+</div>
