@@ -322,7 +322,13 @@ a.read-more {
 /*************** content well portlets: everywhere ***************/
 #portlets-above {
     width: 99.5%;
-    margin: 0;
+    margin: 0 .5em 0 .5em;
+    padding: 0;	
+}
+
+#portlets-below {
+    width: 99.5%;
+    margin: 0 .5em 0 .5em;
     padding: 0;	
 }
 
@@ -353,6 +359,12 @@ div.portletAssignments div.portletHeader {
 	width: 100% !important;
 	height: 400px;
 	z-index: 1;
+}
+
+.section-front-page #portlets-above {
+    width: 99.5%;
+    margin: 0;
+    padding: 0;	
 }
 
 .section-front-page #portlets-below {
