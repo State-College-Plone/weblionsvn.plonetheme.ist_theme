@@ -1,0 +1,93 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plone">
+
+    <!-- 'Weblion IST Theme' Zope 3 browser layer -->
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="Weblion IST Theme"
+        />
+
+    <!-- Special view taken from Sunburst -->
+    <browser:page
+        for="*"
+        name="ISTColumnControl"
+        class=".columncontrol.ColumnControl"
+        permission="zope.Public"
+        allowed_interface=".interfaces.IColumnControl"
+        />                
+        
+    <!-- viewlets -->
+    
+    <!-- Global nav  -->
+    <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+    
+    <!-- Logo  -->
+    <browser:viewlet
+        name="plone.logo"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class="plone.app.layout.viewlets.common.LogoViewlet"
+        template="templates/logo.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+        
+    <!-- Path Bar (Breadcrumbs)  -->
+    <browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        template="templates/path_bar.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+        
+    <!-- Customized footer  -->
+    <browser:viewlet
+      name="plone.footer"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class="plone.app.layout.viewlets.common.FooterViewlet"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/footer.pt"
+      permission="zope2.View"
+      /> 
+        
+  <!-- Customized colophon  -->
+  <browser:viewlet
+    name="plone.colophon"
+    manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+    layer=".interfaces.IThemeSpecific"
+    template="templates/colophon.pt"
+    permission="zope2.View"
+    />
+      
+    <!-- Customized Search box -->
+    <browser:viewlet
+      name="plone.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      layer=".interfaces.IThemeSpecific"
+      class=".viewlets.SearchBoxViewlet"
+      permission="zope2.View"
+      />
+      
+      <!-- portlets -->
+      
+      <include package="plone.app.portlets" />
+      
+     <!-- custom news portlet -->
+     <plone:portletRenderer
+      portlet="plone.app.portlets.portlets.news.INewsPortlet"
+      template="templates/ist_news.pt"
+      layer=".interfaces.IThemeSpecific"
+      />  
+
+</configure>
