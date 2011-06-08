@@ -224,14 +224,13 @@ a:visited {
   float:right;
 }
 /****************** / edit bar ******************/
-
 /****************** content ******************/
 
 #content {
     line-height: 1.5em;
     clear: both;
     font-size: 80%;
-    margin: 0 0.25em .5em 0;
+    margin: 0 0.25em .5em .5em;
 }
 
 .documentDescription {
@@ -255,6 +254,13 @@ a:visited {
     width: auto;
 }
 
+#content table {
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+}
+
 #content div.newsImageContainer a {
     border-bottom: none;
 }
@@ -276,7 +282,8 @@ div.grid_width_is_10 div.newsImageContainer p.discreet { width:28.29%; margin-le
 div.width_full div.newsImageContainer p.discreet { width:23%; margin-left:1%; }
 
 
-/* Make sure Images in the content area follow the grid */
+/* Make sure Images in the content area follow the grid 
+COMMENTING THIS OUT AS IS THE MOST ANNOYING THING IMAGINABLE. USE OF IMAGES IN THE CONTENT AREA NEEDS TO BE MORE FLEXIBLE.
 
 div.grid_width_is_7 img, div.grid_width_is_7 img.rightAlign { float:right; margin-left:1.775%; }
 div.grid_width_is_9 img, div.grid_width_is_9 img.rightAlign { float:right; margin-left:1.37%; }
@@ -303,6 +310,8 @@ div.grid_width_is_9 img.wide { width:42.926%; margin-left:1.37%; }
 div.grid_width_is_10 img.wide { width:38.539%; margin-left:1.23%; }
 div.width_full img.wide { width:31.333%; margin-left:1%; }
 
+*/
+
 .eventDetails {
     float: right;
     clear: right;
@@ -315,7 +324,32 @@ div.grid_width_is_10 .eventDetails { width:38.524%; margin-left:1.23%; }
 div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 
 /****************** / content ******************/
+/****************** photos with captions ******************/
+.photo-box-left {
+	font-weight: bold;
+	line-height: 1em;
+	float: left;
+	width: 30%;
+	margin: 0 .5em 0 0;
+}
 
+.photo-box-left img {
+	width: 100%;
+	height: auto;
+}
+.photo-box-right {
+	font-weight: bold;
+	line-height: 1em;
+	float: right;
+	width: 30%;
+	margin: 0 0 0 1em;
+}
+
+.photo-box-right img {
+	width: 100%;
+	height: auto;
+}
+/****************** / photos with captions ******************/
 /****************** video embeds ******************/
 .vid object,
 .vid embed {

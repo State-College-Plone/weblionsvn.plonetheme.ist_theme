@@ -1,7 +1,11 @@
 Changelog
 =========
 
-1.0 (Unreleased)
+1.0
+----------------
+Initial Release
+
+0.1 (Unreleased)
 ----------------
 * Copied elements from Sunburst theme
 * Added custom CSS to follow Weblion design guidelines
