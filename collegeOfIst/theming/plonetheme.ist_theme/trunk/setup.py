@@ -6,7 +6,7 @@ version = open(os.path.join(os.path.abspath(os.path.dirname(__file__)),
 
 setup(name='plonetheme.ist_theme',
     version=version,
-    description="A theming starting point for Weblion/PSU theme development",
+    description="Theme Product for the College of Information Sciences and Technology",
     long_description=open("README.txt").read() + "\n" +
                      open("HISTORY.txt").read(),
     # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -16,9 +16,11 @@ setup(name='plonetheme.ist_theme',
       "Topic :: Software Development :: Libraries :: Python Modules",
       ],
     keywords='',
-    author='WebLion Documentation Group, Penn State University',
+    author='WebLion Documentation Group, Penn State',
     author_email='support@weblion.psu.edu',
     url='http://weblion.psu.edu/',
+    dependency_links = [
+       'https://weblion.psu.edu/svn/weblion/weblion/AD54Elements/dist/', 
     license='GPL',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['plonetheme'],
@@ -26,7 +28,7 @@ setup(name='plonetheme.ist_theme',
     zip_safe=False,
     install_requires=[
       'setuptools',
-      # -*- Extra requirements: -*-
+      'Products.AD54Elements',
       ],
     entry_points="""
       [z3c.autoinclude.plugin]
