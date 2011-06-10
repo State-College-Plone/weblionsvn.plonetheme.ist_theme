@@ -1,0 +1,44 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+
+div#background-strip-one,
+div#background-strip-two,
+div#background-strip-three,
+div#background-strip-four  {
+    margin:0;
+    padding:0;
+    border:0;
+    position:absolute;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+}
+div#background-strip-one {
+    background-color: &dtml-backgroundStripOneColor;;
+    top: 0;
+    height: 7.1em;
+}
+
+div#background-strip-two {
+    background-color: &dtml-backgroundStripTwoColor;;
+    top: 7em;
+    height: .5em;
+}
+
+div#background-strip-three {
+    background-color: &dtml-backgroundStripThreeColor;;
+    top: 7.5em;
+    height: 1.7em;
+}
+
+div#background-strip-four {
+    background-color: transparent;
+    top: 9.2em;
+    height: 40em;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(&dtml-backgroundStripFourColor;), to(&dtml-bodyBackgroundColor;));
+    background-image: -moz-linear-gradient(top,  &dtml-backgroundStripFourColor;,  &dtml-bodyBackgroundColor;);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='&dtml-backgroundStripFourColor;', endColorstr='&dtml-bodyBackgroundColor;'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='&dtml-backgroundStripFourColor;', endColorstr='&dtml-bodyBackgroundColor;')"; /* IE8 */
+}
+/* </dtml-with> */

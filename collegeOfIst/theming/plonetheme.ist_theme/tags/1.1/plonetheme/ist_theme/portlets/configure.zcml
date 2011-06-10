@@ -1,0 +1,14 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.ist_theme">
+  
+    <plone:portlet
+        name="ist_theme.Contact"
+        interface=".contact.IContact"
+        assignment=".contact.Assignment"
+        renderer=".contact.Renderer"
+        addview=".contact.AddForm"
+        editview=".contact.EditForm"
+        />
+
+</configure>
