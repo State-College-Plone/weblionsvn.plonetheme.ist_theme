@@ -11,7 +11,7 @@
     meta_type="Filesystem Directory View"
     directory="plonetheme.ist_theme:skins/ist_theme_styles"/>
 
- <skin-path name="Weblion IST Theme" based-on="Plone Default">
+ <skin-path name="Weblion IST Theme" based-on="Sunburst Theme">
   <layer name="ist_theme_images"
      insert-after="custom"/>
   <layer name="ist_theme_templates"
