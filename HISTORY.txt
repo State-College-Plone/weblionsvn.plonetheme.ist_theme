@@ -4,12 +4,3 @@ Changelog
 1.1
 ----------------
 Changed based-on information in skins.xm. from Default to Sunburst
-
-1.0
-----------------
-Initial Release
-
-0.1 (Unreleased)
-----------------
-* Copied elements from Sunburst theme
-* Added custom CSS to follow Weblion design guidelines
