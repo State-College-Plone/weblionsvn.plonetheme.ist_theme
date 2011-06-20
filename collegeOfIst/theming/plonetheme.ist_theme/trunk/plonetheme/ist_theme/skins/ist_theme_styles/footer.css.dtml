@@ -29,11 +29,12 @@
 
 /*---- Colophon ---- */
 #portal-colophon {
-    background-color:&dtml-footer2Back;;
-    color: &dtml-footer2Font;;
+    background-color: #e5e5e5;
+    color: #000000;
     font-size: 70%;
     text-align: center;
     padding: 1em 0 .5em;
+    margin-bottom: 0 !important;
 }
 
 #portal-colophon li {
@@ -55,7 +56,7 @@
 #portal-siteactions {
     background-color:&dtml-footer2Back;;
     color:&dtml-footer2Font;;
-    font-size: 85%;
+    font-size: 75%;
     padding-bottom: 2em;
     text-align: center;
     float:left;

@@ -27,7 +27,7 @@
     display: inline;
     position: relative; 
     background: &dtml-globalNavMainTop;;
-    background-image: url(globalnavbg.png);
+    /*background-image: url(globalnavbg.png); */
     background: -webkit-gradient(linear, left top, left bottom, from(&dtml-globalNavMainTop;), to(&dtml-globalNavMainBottom;));
     background: -moz-linear-gradient(top,  &dtml-globalNavMainTop;,  &dtml-globalNavMainBottom;);
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='&dtml-globalNavMainTop;', endColorstr='&dtml-globalNavMainBottom;'); /* IE6 & IE7 */
