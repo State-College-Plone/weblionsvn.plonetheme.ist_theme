@@ -5,7 +5,7 @@
 
 /****************** body ******************/
 body {
-    background-color: &dtml-bodyBackgroundColor;;
+    background-color: #ffffff;
     font-family: Arial, Verdana, FreeSans, sans-serif;
     color: &dtml-fontColor;;
 }
@@ -13,8 +13,10 @@ body {
 
 /****************** wrapper ******************/
 #visual-portal-wrapper {
-	background-color: &dtml-backgroundColor;;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
     width: 80%;
+    min-width: 910px;
     float:left;
     margin-left: 12%;
     margin-right: 10%;
@@ -26,6 +28,7 @@ body {
 .section-front-page #visual-portal-wrapper {
 	background-color: #e5e5e5;
     width: 75%;
+    min-width: 910px;
     float:left;
     margin-left: 12%;
     margin-right: 10%;
@@ -36,7 +39,7 @@ body {
 /****************** / wrapper ******************/
 /****************** portal top ******************/
 #portal-top { 
-	background-color: &dtml-bodyBackgroundColor;;
+	background-color: #e5e5e5;
 	margin-bottom: 1em;
 }
 
@@ -74,6 +77,7 @@ body {
 
 #portal-logo a#logo-site {
 	font-family: "Arial, Helvetica, sans-serif, Lucida Grande", Verdana, Lucida;
+	font-weight: bold;
 	text-transform: uppercase;
 	text-align: right;
     font-size: 90%;
@@ -146,6 +150,10 @@ h2 a, h3 a, h4 a {
 	margin: 1em 0 0 0;
 }
 
+.alpha {
+    display: inline;
+}
+
 /****************** / headings ******************/
 /****************** links ******************/
 a { 
@@ -166,8 +174,8 @@ a:visited {
 	text-decoration: underline;
 }
 
-#content a:hover {
-	color: &dtml-contentLinkHoverColor;; 
+#content a:hover, dl.portlet a:hover {
+    color: #336699 !important;
 }
 
 #content a:visited {
@@ -242,12 +250,6 @@ a:visited {
 	height: auto;
 }
 
-#content img.tileImage,
-#content div.newsImageContainer {
-    float: right;
-    margin: 0 1em 0.5em 1em;
-}
-
 #content img.tileImage {
     float: left;
     margin: 0 1em 0.5em 1em;
@@ -261,9 +263,25 @@ a:visited {
     width: 100%;
 }
 
+#content img.tileImage,
+#content div.newsImageContainer {
+    float: right;
+    margin: 0 1em 0.5em 1em;
+}
+
+#content div.newsImageContainer {
+    width: 20% !important;
+    margin: 0 0 0 .5em !important;
+}
+
+#content div.newsImageContainer img {
+    width: 100%;
+}
+
 #content div.newsImageContainer a {
     border-bottom: none;
 }
+
 #content div.newsImageContainer p.discreet {
     margin: 0;
     padding: 0.5em;

@@ -140,6 +140,29 @@ dd.portletItem a:hover, dd.portletFooter a:hover, dd.portletFooter a:hover {
 
 /********* navigation portlet *********/
 
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    border-bottom: none;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: transparent;
+    border-left: none;
+    margin-left: 0;
+}
+
+.portletHeader a:hover,
+.portletHeader a:visited:hover,
+dl.portlet dt a:hover {
+    color: #336699 !important;
+}
+
+dl.portlet a:link,
+dl.portlet a:visited
+ {
+    border-bottom: none;
+    color: #444444;
+}
+
 .portletWrapper .portletNavigationTree {
 	width: 100%;
 	margin: 0;
@@ -209,8 +232,7 @@ dl.portlet ul.navTree li {
 
 dl.portlet ul.navTree li a {
     border: none;
-    /* color: &dtml-portletLink;; */
-    color: &dtml-linkColor;;
+    color: #444444 !important;
     padding: 2%;
     display: block;
     line-height: 1.2em;
@@ -290,7 +312,27 @@ dl.portlet ul.navTree .navTreeCurrentItem a:hover {
 }
 /********* / managed portlet *********/
 
-/*************** bling portlet ***************/
+/*************** bling portlet: home page ***************/
+.section-front-page .portletsAboveContentA,
+.section-front-page .portletsAboveContentA portletWrapper, 
+.section-front-page ul.slideshow {
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+}
+
+.section-front-page .portletsAboveContentA img {
+	width: 100% !important;
+	height: 360px;
+	z-index: 1;
+}
+
+.section-front-page #portlets-above {
+    width: 99.5%;
+    margin: 0;
+    padding: 0;	
+}
+
 .section-front-page ul.slideshow li img {
 	width: 100%;
 }
@@ -298,33 +340,77 @@ dl.portlet ul.navTree .navTreeCurrentItem a:hover {
 .section-front-page .slideshow-caption {
     height: 80px !important;
     opacity: 0.8 !important;
-}
-
-.slideshow-caption {
-    height: 50px !important;
-    opacity: 0.8 !important;
-}
-
-.slideshow-caption .slideshow-caption-container {
-    padding: 0 5px 10px 5px !important;
-}
-
-.slideshow-caption p {
     margin: 0 !important;
 }
 
-a.read-more {
+.section-front-page .slideshow-caption .slideshow-caption-container {
+    padding: 0 5px 10px 5px !important;
+}
+
+.section-front-page .slideshow-caption p {
+    margin: 0 !important;
+}
+
+.section-front-page a.read-more {
+	color: #ffffff !important;
 	display: block !important;
     margin: 0 0 10px 0 !important;
 }
-/*************** / bling portlet ***************/
+/*************** / bling portlet: home page ***************/
 
-/*************** content well portlets: everywhere ***************/
+/*************** bling portlet: second level ***************/
 #portlets-above {
     width: 99.5%;
-    margin: 0 .5em 0 .5em;
+    margin: 0 2em 0 .5em;
     padding: 0;	
 }
+
+.portletsAboveContentA,
+.portletsAboveContentA portletWrapper, 
+ul.slideshow {
+	width: 100%;
+	height: 200px;
+	margin: 0 0 .5em 0;
+	z-index: 1;
+}
+
+.portletsAboveContentA img {
+	width: 100% !important;
+	height: 200px;
+	z-index: 1;
+}
+
+.portletsAboveContentA portletWrapper, ul.slideshow, ul.slideshow img {
+	width: 100%;
+	min-height: 200px !important;
+	z-index: 1;
+}
+
+.portletsAboveContentA img {
+	width: 100% !important;
+	z-index: 1;
+}
+
+.portletsAboveContentA dl.portlet dt {
+	display: none;
+}
+
+.slideshow-caption .slideshow-caption-container {
+    padding: 5px 10px;
+    z-index: 1000;
+}
+
+.slideshow-caption {
+    height: 600px;
+}
+
+ul.slideshow li {
+    margin: 0;	
+}
+
+/*************** / bling portlet: second level ***************/
+
+/*************** content well portlets: everywhere ***************/
 
 #portlets-below {
     width: 99.5%;
@@ -337,6 +423,16 @@ div.portletAssignments div.portletHeader {
 	color: &dtml-portletHeaderText;;
 }
 
+.portletHeader a, 
+.portletHeader a:visited, 
+dl.portlet dt a:link, 
+dl.portlet dt a:visited, 
+dl.portlet dt, 
+div.portletAssignments,
+div.portletHeader {
+		background: none;
+}
+
 #portlets-above dl.portlet dd.portletItem {
    padding: .5em 0 0 0;
 }
@@ -347,25 +443,6 @@ div.portletAssignments div.portletHeader {
 /*************** / content well portlets: everywhere ***************/
 
 /*************** content well portlets: front-page ***************/
-.section-front-page .portletsAboveContentA,
-.section-front-page .portletsAboveContentA portletWrapper, 
-.section-front-page ul.slideshow {
-	width: 100%;
-	height: 400px;
-	z-index: 1;
-}
-
-.section-front-page .portletsAboveContentA img {
-	width: 100% !important;
-	height: 400px;
-	z-index: 1;
-}
-
-.section-front-page #portlets-above {
-    width: 99.5%;
-    margin: 0;
-    padding: 0;	
-}
 
 .section-front-page #portlets-below {
     width: 100%;
@@ -402,21 +479,9 @@ div.portletAssignments div.portletHeader {
 }
 /*************** / content well portlets: front-page ***************/
 
+
+
 /*************** content well portlets: second level ***************/
-.portletsAboveContentA portletWrapper, ul.slideshow, ul.slideshow img {
-	width: 100%;
-	min-height: 200px !important;
-	z-index: 1;
-}
-
-.portletsAboveContentA img {
-	width: 100% !important;
-	z-index: 1;
-}
-
-.portletsAboveContentA dl.portlet dt {
-	display: none;
-}
 
 .portletsBelowContentA .portletWrapper, 
 .portletsBelowContentB .portletWrapper, 
@@ -438,6 +503,13 @@ div.portletAssignments div.portletHeader {
 
 .portletsBelowContentC .portletWrapper {
 	    margin: 0;
+}
+
+#portlets-below dd.portletItem a, 
+#portlets-below dd.portletFooter a, 
+#portlets-below dd.portletFooter a:visited {
+    color: #444444;
+    text-decoration: none;
 }
 
 /*************** / content well portlets: second level ***************/
@@ -495,7 +567,7 @@ div.portletAssignments div.portletHeader {
 #classic-portlet-contacts {
 	border: 1px solid &dtml-portletLinkBackground;;
 	font-family: &dtml-portletFont;;
-	font-size: 90%;
+    font-size: 85%;
 	margin: .5em 0 0 0;
 	padding: .5em;
 }
@@ -517,6 +589,18 @@ div.portletAssignments div.portletHeader {
 
 #classic-portlet-contacts ul li {
 	font-size: 80%;
+}
+
+.socialNetwork {
+    margin: .5em 0 1em 0;
+    width: 100%;
+}
+
+.socialNetwork img {
+    float: left;
+    height: 20px;
+    width: auto;
+    margin: 0 .5em 0 0;
 }
 
 /*************** / classic portlets ***************/

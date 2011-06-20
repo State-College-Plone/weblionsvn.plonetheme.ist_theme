@@ -10,13 +10,13 @@ editBarColor:string=#75ad0a
 
 compatibilityClassic:string=The below values are copied directly from the old Plone theme to make sure that products that rely on them don't break. 
 
-bodyBackgroundColor:string=#e5e5e5
+bodyBackgroundColor:string=#fdf9f9
 
 fontBaseSize:string=69%
 fontColor:string=#292828
 fontSmallSize:string=90%
 
-backgroundColor:string=#ffffff
+backgroundColor:string=#e5e5e5
 
 borderWidth:string=1px
 borderStyle:string=solid
