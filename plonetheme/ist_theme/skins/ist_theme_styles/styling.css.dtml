@@ -263,7 +263,6 @@ a:visited {
     width: 100%;
 }
 
-#content img.tileImage,
 #content div.newsImageContainer {
     float: right;
     margin: 0 1em 0.5em 1em;
@@ -482,10 +481,9 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 
 .personView div.caption ul li {
 	margin: 0 0 .5em 0 !important;
-	line-height: .75em !important;
+	line-height: 1em !important;
 	list-style: none !important;
 }
-
 
 /***** for when you want a bi-column page *****/
 
@@ -498,7 +496,7 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 #content-column-02 {
     float: right;
     clear: right;
-    width: 46%;
+    width: 48%;
 }
 
 /***** for when you want tile items to take up half the page *****/

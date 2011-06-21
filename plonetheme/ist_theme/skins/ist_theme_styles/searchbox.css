@@ -201,9 +201,12 @@
 } 
 
 .searchContainer-ist input[type="text"] {
-	border: 1px solid #BCBBBB;
-	color: #000000 !important;
+	border: 1px solid #000000;
 	padding: 0 0 0 .2em;
+}
+
+.searchContainer input[type="text"] {
+	color: #000000 !important;
 }
 
 .searchContainer-ist img { vertical-align:middle;}

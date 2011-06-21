@@ -19,7 +19,9 @@ Added FacultyStaffDirectory Data: Phone, E-mail
         
             <!-- we don't want the dl -->
             <metal:entries fill-slot="entries">
-            <h2>Contacts in this Department</h2>
+            <div id="content-column-02">
+                <h2>Contacts in this Department</h2>
+            </div>
             
                 <metal:block use-macro="context/folder_listing/macros/entries">
                     <metal:entry fill-slot="entry">
@@ -46,7 +48,9 @@ Added FacultyStaffDirectory Data: Phone, E-mail
 
                     <div tal:condition="python:item_type =='FSDPerson'" class="facultyStaffDirectory" >
                         <div tal:condition="item_object/getJobTitles" class="jobTitle">
-		                    <span tal:repeat="jobTitle item_object/getJobTitles" tal:content="jobTitle"></span>
+                            <ul>
+		                    <li tal:repeat="jobTitle item_object/getJobTitles" tal:content="jobTitle"></li>
+		                    </ul>
 			            </div>
                         <div tal:condition="item_object/getEmail" class="email">
                            <span tal:content="structure python:context.spamProtectFSD(item_object.getEmail())"></span>
@@ -133,6 +137,8 @@ Added FacultyStaffDirectory Data: Phone, E-mail
             </metal:entries>
         </metal:block>
     </metal:content-core>
+    
+    
     
 </body>
 </html>

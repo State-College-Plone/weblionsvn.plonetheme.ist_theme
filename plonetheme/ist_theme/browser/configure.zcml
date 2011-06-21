@@ -70,15 +70,6 @@
     permission="zope2.View"
     />
       
-    <!-- Customized Search box -->
-    <browser:viewlet
-      name="plone.searchbox"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      layer=".interfaces.IThemeSpecific"
-      class=".viewlets.SearchBoxViewlet"
-      permission="zope2.View"
-      />
-      
       <!-- portlets -->
       
       <include package="plone.app.portlets" />

@@ -365,14 +365,14 @@ dl.portlet ul.navTree .navTreeCurrentItem a:hover {
     padding: 0;	
 }
 
-.portletsAboveContentA,
+/*.portletsAboveContentA,
 .portletsAboveContentA portletWrapper, 
 ul.slideshow {
 	width: 100%;
 	height: 200px;
 	margin: 0 0 .5em 0;
 	z-index: 1;
-}
+} */
 
 .portletsAboveContentA img {
 	width: 100% !important;
