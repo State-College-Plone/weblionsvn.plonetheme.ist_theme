@@ -162,7 +162,7 @@ a {
 }
 a:hover, a:visited:hover { 
 	color: &dtml-contentLinkHoverColor;; 
-	background-color: none; 
+	background-color: transparent; 
 }
 
 a:visited { 

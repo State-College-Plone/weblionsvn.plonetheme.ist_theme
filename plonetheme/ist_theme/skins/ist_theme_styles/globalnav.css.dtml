@@ -58,5 +58,6 @@
     -ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-globalNavActiveTop;', endColorstr='&dtml-globalNavActiveBottom;'); /* ie8 */  
     color: &dtml-globalNavActiveFont;;
     text-shadow: &dtml-globalNavActiveShadow; 1px 1px 1px;
+}
 
 /* </dtml-with> */
