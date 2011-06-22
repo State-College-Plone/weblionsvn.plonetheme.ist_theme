@@ -4,20 +4,23 @@
 /* begin css rules */
 
 /****************** body ******************/
+
 body {
     background-color: #ffffff;
     font-family: Arial, Verdana, FreeSans, sans-serif;
     color: &dtml-fontColor;;
 }
+
 /****************** / body ******************/
 
 /****************** wrapper ******************/
+
 #visual-portal-wrapper {
 	border: 1px solid #cccccc;
 	background-color: #ffffff;
     width: 80%;
     min-width: 910px;
-    float:left;
+    float: left;
     margin-left: 12%;
     margin-right: 10%;
     -moz-box-shadow: #333 2px 2px 6px; 
@@ -29,15 +32,18 @@ body {
 	background-color: #e5e5e5;
     width: 75%;
     min-width: 910px;
-    float:left;
+    float: left;
     margin-left: 12%;
     margin-right: 10%;
     -moz-box-shadow: #333 2px 2px 6px; 
     -webkit-box-shadow: #333 2px 2px 6px;
     box-shadow: 2px 2px 6px #333;
 }
+
 /****************** / wrapper ******************/
+
 /****************** portal top ******************/
+
 #portal-top { 
 	background-color: #e5e5e5;
 	margin-bottom: 1em;
@@ -54,11 +60,13 @@ body {
 	 width: 70%;
 }
 
-#portal-logo a { float:left; }
+#portal-logo a { 
+	float: left; 
+}
 
 #portal-logo a, #portal-logo a:hover, #portal-logo a:visited {
     color: &dtml-fontColor;;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 #portal-logo a#logo-psu { 
@@ -66,23 +74,17 @@ body {
     min-width: 100px; 
 	padding: 0 0 1%; 
 }
-
-#portal-logo a#logo-psu img {  }
    
 #portal-logo a {
-	/* font-size: 90%; */
     padding: 1.5% 0 0;
-    /* width: 70%; */
 }
 
 #portal-logo a#logo-site {
 	font-family: "Arial, Helvetica, sans-serif, Lucida Grande", Verdana, Lucida;
 	font-weight: bold;
 	text-transform: uppercase;
-	/* text-align: right; */
     font-size: 90%;
     padding: 4.5% 0 0;
-    /* width: 72%; */
 }
 
 .mixed-size {
@@ -90,7 +92,9 @@ body {
 }
 
 /****************** / portal top ******************/
+
 /****************** headings ******************/
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     font-weight: bold;
@@ -145,7 +149,9 @@ h2 a, h3 a, h4 a {
     margin-top: 0;
 	color: &dtml-fontColor;;
 }
+
 /***** style for h3 in customized fsd person_view.pt *****/
+
 .fsd-custom {
 	margin: 1em 0 0 0;
 }
@@ -155,6 +161,7 @@ h2 a, h3 a, h4 a {
 }
 
 /****************** / headings ******************/
+
 /****************** links ******************/
 a { 
 	color: &dtml-linkColor;; 
@@ -174,6 +181,10 @@ a:visited {
 	text-decoration: underline;
 }
 
+#content a:link, dl.portlet a:link {
+    border-bottom: none;
+}
+
 #content a:hover, dl.portlet a:hover {
     color: #336699 !important;
 }
@@ -181,17 +192,15 @@ a:visited {
 #content a:visited {
 	color: &dtml-contentLinkVisitedColor;; 
 }
+
 /****************** / links ******************/
+
 /****************** breadcrumbs ******************/
+
 #portal-breadcrumbs {
     height:1.75em;
-    width:100%;
-    font-size:.6em;
-/* Comment out to remove border 
-    border:1px solid #dedede; */
-    
-/*  Comment out to remove background color */
-   /* background-color:#CCC;*/
+    width: 100%;
+    font-size: .6em;
 }
 
 #portal-breadcrumbs span {
@@ -209,29 +218,32 @@ a:visited {
 	color: &dtml-fontColor;;
     display: block;
     padding: 0 .65em 0 0;
-/* Comment out to remove apple arrow graphic after link */
-/* If using background color for breadcrumbs, this image will need to be updated
-   or commented out */
-   background: transparent url(crumbs.gif) no-repeat right center;
+    background: transparent url(crumbs.gif) no-repeat right center;
 }
+
 #portal-breadcrumbs span a:link,
 #portal-breadcrumbs span a:visited {
     color: &dtml-fontColor;;
     text-decoration: none;
 }
 
-#portal-breadcrumbs a:link, #portal-breadcrumbs a:visited,	
+#portal-breadcrumbs a:link, 
+#portal-breadcrumbs a:visited,	
 #portal-breadcrumbs span a:hover,
 #portal-breadcrumbs span a:focus {
     color: &dtml-contentLinkHoverColor;;
 }
+
 /****************** / breadcrumbs ******************/
 
 /****************** edit bar ******************/
+
 #edit-bar .contentActions {
   float:right;
 }
+
 /****************** / edit bar ******************/
+
 /****************** content ******************/
 
 #content {
@@ -292,42 +304,12 @@ a:visited {
     width: 100%;
     top: -3em;
 }
+
 /* Make sure event details falls into our grid */
 div.grid_width_is_7 div.newsImageContainer p.discreet { width:31.51%; margin-left:1.37%; }
 div.grid_width_is_9 div.newsImageContainer p.discreet { width:40.825%; margin-left:1.775%; }
 div.grid_width_is_10 div.newsImageContainer p.discreet { width:28.29%; margin-left:1.23%; }
 div.width_full div.newsImageContainer p.discreet { width:23%; margin-left:1%; }
-
-
-/* Make sure Images in the content area follow the grid 
-COMMENTING THIS OUT AS IS THE MOST ANNOYING THING IMAGINABLE. USE OF IMAGES IN THE CONTENT AREA NEEDS TO BE MORE FLEXIBLE.
-
-div.grid_width_is_7 img, div.grid_width_is_7 img.rightAlign { float:right; margin-left:1.775%; }
-div.grid_width_is_9 img, div.grid_width_is_9 img.rightAlign { float:right; margin-left:1.37%; }
-div.grid_width_is_10 img, div.grid_width_is_10 img.rightAlign { float:right; margin-left:1.23%; }
-div.width_full img, div.width_full img.rightAlign { float:right; margin-left:1%; }
-
-div.grid_width_is_7 img.leftAlign { float:left; margin-right:1.775%; }
-div.grid_width_is_9 img.leftAlign { float:left; margin-right:1.37%; }
-div.grid_width_is_10 img.leftAlign { float:left; margin-right:1.23%; }
-div.width_full img.leftAlign { float:left; margin-right:1%; }
-
-div.grid_width_is_7 img.thin { width:26.033%; margin-left:1.775%; }
-div.grid_width_is_9 img.thin { width:20.093%; margin-left:1.37%; }
-div.grid_width_is_10 img.thin { width:18.04%; margin-left:1.23%; }
-div.width_full img.thin { width:14.667%; margin-left:1%; }
-
-div.grid_width_is_7 img { width:40.825%; margin-left:1.775%; }
-div.grid_width_is_9 img { width:31.51%; margin-left:1.37%; }
-div.grid_width_is_10 img { width:28.29%; margin-left:1.23%; }
-div.width_full img { width:23%; margin-left:1%; }
-
-div.grid_width_is_7 img.wide { width:55.616%; margin-left:1.775%; }
-div.grid_width_is_9 img.wide { width:42.926%; margin-left:1.37%; }
-div.grid_width_is_10 img.wide { width:38.539%; margin-left:1.23%; }
-div.width_full img.wide { width:31.333%; margin-left:1%; }
-
-*/
 
 .eventDetails {
     float: right;
@@ -341,7 +323,9 @@ div.grid_width_is_10 .eventDetails { width:38.524%; margin-left:1.23%; }
 div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 
 /****************** / content ******************/
+
 /****************** photos with captions ******************/
+
 .photo-box-left {
 	font-weight: bold;
 	line-height: 1em;
@@ -354,6 +338,7 @@ div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 	width: 100%;
 	height: auto;
 }
+
 .photo-box-right {
 	font-weight: bold;
 	line-height: 1em;
@@ -366,8 +351,11 @@ div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 	width: 100%;
 	height: auto;
 }
+
 /****************** / photos with captions ******************/
+
 /****************** video embeds ******************/
+
 .vid object,
 .vid embed {
     width: 100%;
@@ -382,7 +370,8 @@ div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 
 /****************** / video embeds ******************/
 
-/* ----  Personal Tools ---*/
+/****************** personal tools ******************/
+
 div#portal-personaltools-wrapper {
     font-size:.8em;
     position: absolute;
@@ -405,17 +394,19 @@ dl#portal-personaltools {
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
 }
+
 #portal-personaltools #anon-personalbar a {
     float: left;
     margin-right: 0.5em;
 }
 dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon-personalbar a:visited {
-    color:#0645AD; background-color:transparent;
+    color: #0645AD; 
+    background-color: transparent;
 }
 
-/* @group Personal tools pulldown */
 #portal-personaltools dl {
 }
+
 #portal-personaltools dt {
     font-weight: normal;
 }
@@ -451,15 +442,19 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
     background: &dtml-contentLinkHoverColor;;
     color: White;
 }
-/* @end */
 
-/***** site sections *****/
+/****************** / personal tools ******************/
+
+
+/****************** site sections ********************/
 
 .section-front-page h1, .section-front-page #portal-breadcrumbs {
 	display: none;
 }
 
-/***** fsd *****/
+/****************** / site sections ********************/
+
+/****************** fsd ********************/
 
 .facultyStaffDirectory .atozView .alphabetLinks ol li {
     display: inline;
@@ -483,6 +478,8 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 	line-height: 1em !important;
 	list-style: none !important;
 }
+
+/****************** / fsd ********************/
 
 /***** for when you want a bi-column page *****/
 
@@ -508,8 +505,7 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
     width: 46%;
 }
 
-/* Clear Floated Elements
-----------------------------------------------------------------------------------------------------*/
+/****************** clear floats ********************/
 
 /* http://sonspring.com/journal/clearing-floats */
 
@@ -546,6 +542,9 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 .clearfix {
     display: block;
 }
+
+/****************** / clear floats ********************/
+
 
 /* end css rules */
 
