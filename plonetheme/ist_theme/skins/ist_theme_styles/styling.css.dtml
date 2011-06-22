@@ -384,14 +384,15 @@ div.width_full .eventDetails { width:31.333%; margin-left:1%; }
 
 /* ----  Personal Tools ---*/
 div#portal-personaltools-wrapper {
-   /* display:none;*/
     font-size:.8em;
+    position: absolute;
+    left: 92%;
     z-index: 50; /* personaltools should be above #portal-header (with z-index: 2) */
-    /* position: fixed; */
-    float: right;
-    bottom: 0;
-    width: 6.33%;
+    top: 0;
+    width: 8%;
+    text-align: right;
 }
+
 dl#portal-personaltools {
     background: #e3e3e3;
     top: 0;
@@ -421,20 +422,18 @@ dl#portal-personaltools #anon-personalbar a:hover, dl#portal-personaltools #anon
 #portal-personaltools dt.actionMenuHeader a:after {
     content: " ▼";
 }
-#portal-personaltools dd {
-    right: 0;
-    margin-top: -1.5em;
-    margin-left:5em;
-}
+
 #portal-personaltools dd li {
     display:inline;
     float:left;
     clear:none;
 }
+
 #portal-personaltools dd {
     background: &dtml-bodyBackgroundColor;;
     padding-bottom: 0.5em;
 }
+
 #portal-personaltools dd ul {
     background: &dtml-bodyBackgroundColor;;
     float:left;
