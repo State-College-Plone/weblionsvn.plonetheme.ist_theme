@@ -120,18 +120,6 @@
               <tal:siteinfo tal:replace="structure sites" />
           </div>
           
-
-          <div tal:condition="python: showExpired and context.getWebsites()"
-               class="websites">
-            <h3 i18n:translate="FacultyStaffDirectory_label_websites_heading">Websites</h3>
-            <ul>
-              <li tal:repeat="website context/getWebsites">
-                <a class='url' href=""
-                   tal:attributes="href website"
-                   tal:content="website" />
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div class="visualClear"><!-- --></div>
