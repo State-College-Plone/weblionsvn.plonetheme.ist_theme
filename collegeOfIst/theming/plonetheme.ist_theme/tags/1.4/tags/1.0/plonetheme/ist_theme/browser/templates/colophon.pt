@@ -1,0 +1,27 @@
+<div id="portal-colophon"
+     metal:define-macro="colophon"
+     i18n:domain="plone" class="row">
+
+<metal:slot define-slot="colophon" />
+  <div class="colophonWrapper">
+    <ul>
+     <li>
+         Built in partnership with 
+      <a href="http://weblion.psu.edu"
+          class="colophonIcon colophonIconWebLion"
+          title="This Plone site was built in partnership with the WebLion Project at Penn State. Follow this link for more information.">
+          WebLion at Penn State.
+     </a>
+     </li> 
+     <li>
+         Powered by 
+     <a href="http://plone.org"
+          title="This site was built using the Plone Open Source CMS/WCM."
+          i18n:attributes="title title_built_with_plone;"
+          i18n:translate="label_powered_by_plone">
+          Plone and Python.
+     </a>
+     </li>
+    </ul>
+  </div>
+</div>

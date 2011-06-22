@@ -1,0 +1,44 @@
+<div metal:define-macro="portal_footer"
+     i18n:domain="plone"
+     id="portal-footer" class="row">
+
+     <tal:comment condition="nothing">
+
+       This footer complies with AD-54 standards. It has:
+          1) Privacy and legal statements
+          2) "Created by" script that is updated automatically when the page is updated.
+          3) "Last Modified" script, which gets the date from the server automatically and outputs it in month/date/year format
+          4) The copyright date, which gets the date from the current calendar year
+          5) Plone requests that sites link back to plone.org. Thus, the "Powered by Plone" link.
+          rtp2@psu.edu
+
+          ** Added webmaster contact information to footer. Reorganized footer and 
+     eliminated reference and link to last editor. 
+     {cjohansen@psu.edu} - 2005-09-08 
+     </tal:comment>
+             <p>Copyright &copy;<span tal:omit-tag="" tal:define="now modules/DateTime/DateTime" tal:content="now/year" />,
+         <a href="http://www.psu.edu/" title="Penn State home page.">The Pennsylvania State University</a> | 
+
+
+         <span i18n:translate="description_copyright" tal:omit-tag="">
+         <a href="http://www.psu.edu/ur/legal.html" title="Official statements on privacy, nondiscrimination, equal opportunity and copyright.">Privacy and Legal Statements</a>
+         </span>
+         <br />
+
+     <tal:comment tal:condition="nothing">If there is no webmaster email address don't show</tal:comment>
+        <span tal:define="mailt  context/email_from_address"
+                  tal:condition="context/email_from_address">
+         Contact the <a tal:attributes="href string:mailto:${mailt}"  
+                 title="Contact the web administrator" 
+                 tal:content="context/email_from_name">webmaster</a> | 
+       </span>
+
+             <span i18n:translate="box_last_modified">
+         Last modified
+         </span>
+         <span tal:replace="python:here.toLocalizedTime(here.ModificationDate(),long_format=0)">
+         August 
+         </span></p>
+
+
+     </div>

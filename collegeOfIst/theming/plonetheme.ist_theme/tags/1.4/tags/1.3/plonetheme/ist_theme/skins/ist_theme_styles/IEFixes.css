@@ -1,0 +1,10 @@
+/* 
+    note: 
+    take care here since the Weblion IST Theme uses IE8.js - 
+    ie hacks like: div {height:0.1%} 
+    will actually result in height 0.1% of that element
+    https://dev.plone.org/plone/ticket/10417
+*/
+
+* html  img, div, a, input { behavior: url(&dtml-portal_url;/iepngfix.htc); }
+
