@@ -51,7 +51,7 @@ body {
 	 display: inline-block;
 	 margin: 0;
 	 padding: 0;
-	 width: 70%;
+	 /* width: 70%; */
 }
 
 #portal-logo a { float:left; }
@@ -162,7 +162,7 @@ a {
 }
 a:hover, a:visited:hover { 
 	color: &dtml-contentLinkHoverColor;; 
-	background-color: none; 
+	background-color: transparent; 
 }
 
 a:visited { 

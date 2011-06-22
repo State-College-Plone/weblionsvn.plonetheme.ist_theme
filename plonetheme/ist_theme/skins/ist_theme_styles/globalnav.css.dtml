@@ -5,7 +5,7 @@
 #portal-globalnav {
     clear: both;
     font-size: .8em;
-    height: 1.4em;
+    /* height: 1.4em; */
     padding: .5em 0;
     /* border: 1px solid &dtml-globalNavBorder;; */
     -moz-box-shadow: #333 2px 2px 6px; 
@@ -51,12 +51,13 @@
 }
 
 #portal-globalnav .selected a, #portal-globalnav a:focus {
-    background: #&dtml-globalNavActiveTop;;
+    background: #aba9b2;
     background: -webkit-gradient(linear, left top, left bottom, from(&dtml-globalNavActiveTop;), to(&dtml-globalNavActiveBottom;));
     background: -moz-linear-gradient(top,  &dtml-globalNavActiveTop;,  &dtml-globalNavActiveBottom;);
     filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-globalNavActiveTop;', endColorstr='&dtml-globalNavActiveBottom;'); /* ie7 */
     -ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='&dtml-globalNavActiveTop;', endColorstr='&dtml-globalNavActiveBottom;'); /* ie8 */  
     color: &dtml-globalNavActiveFont;;
     text-shadow: &dtml-globalNavActiveShadow; 1px 1px 1px;
+}
 
 /* </dtml-with> */
