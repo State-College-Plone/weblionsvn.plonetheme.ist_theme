@@ -1,0 +1,32 @@
+Changelog
+=========
+
+1.5
+_______________
+* css fixes address personal_tools and portal-top issues; other minor issues
+
+1.4
+_______________
+* css and template fixes address fsd person_view display issues
+
+1.3
+_______________
+* css fixes address issues with header, searchbox
+
+1.2
+_______________
+* Removed customizations of AD54Elements
+* Refined templates, css
+
+1.1
+----------------
+* Changed based-on information in skins.xm. from Default to Sunburst
+
+1.0
+----------------
+* Initial Release
+
+0.1 (Unreleased)
+----------------
+* Copied elements from Sunburst theme
+* Added custom CSS to follow Weblion design guidelines

@@ -1,0 +1,63 @@
+/* ---------  Plone search box ------------- */
+#portal-searchbox {
+    clear: none;
+    float: right;
+    font-size: 90%;
+    margin: 2em 1em 0 0;
+    text-align: left;
+}
+
+#portal-searchbox label, #portal-searchbox input {
+    font-size: 70%;
+}
+#portal-searchbox input.searchButton {
+    font-size:40%;
+    -moz-border-radius: none;
+}
+
+#portal-searchbox label {
+    font-weight: normal;
+}
+
+.LSBox {
+    width: 100%;
+}
+
+#searchGadget,
+.LSBox input.searchField {
+    width: 80%;
+}
+
+#searchGadget,
+.LSBox input.searchButton {
+    font: .8em;
+}
+
+.LSBox .searchSection {
+}
+
+/* search form */
+
+.searchform {
+	border: none !important;
+	background-color: #e5e5e5 !important;
+	-webkit-box-shadow: none !important;
+	-moz-border-radius: none !important;
+	-moz-box-shadow: none !important;
+    display: inline-block;
+    zoom: 1; /* ie7 hack for display:inline-block */
+    *display: inline;
+    width: 90%;
+    padding-top: .5em .5em;
+}
+
+.searchform input {
+    font: normal 12px/100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* search */ 
+
+.searchContainer input[type="text"] {
+	color: #000000 !important;
+}
+
