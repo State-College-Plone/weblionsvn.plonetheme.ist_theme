@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.3
+_______________
+* css fixes address issues with header, searchbox
+
 1.2
 _______________
 * Removed customizations of AD54Elements
