@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.5
+_______________
+* css fixes address personal_tools and portal-top issues; other minor issues
+
+1.4
+_______________
+* css and template fixes address fsd person_view display issues
+
 1.3
 _______________
 * css fixes address issues with header, searchbox
