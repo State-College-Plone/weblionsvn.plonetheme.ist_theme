@@ -1,6 +1,0 @@
-Changelog
-=========
-
-1.1
-----------------
-Changed based-on information in skins.xm. from Default to Sunburst

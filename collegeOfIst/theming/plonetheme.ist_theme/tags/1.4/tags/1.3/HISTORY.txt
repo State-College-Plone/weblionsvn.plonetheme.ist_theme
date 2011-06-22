@@ -1,6 +1,0 @@
-Changelog
-=========
-
-1.3
-_______________
-* css fixes address issues with header, searchbox

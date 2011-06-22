@@ -1,8 +1,0 @@
-Changelog
-=========
-
-1.2
-_______________
-* Removed customizations of AD54Elements
-* Refined templates, css 
-
